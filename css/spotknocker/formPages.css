@@ -1,0 +1,120 @@
+@CHARSET "UTF-8";
+
+.container {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+header {
+	flex: 0 1 auto;
+}
+
+.main-section, .page-section, .page-form, .my-files-container,
+	.my-files-block {
+	flex: 1 1 auto;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+}
+
+.secondary-header-section, footer {
+	display: none;
+}
+
+.form-add-file-block {
+	padding: 0 0 0.625rem 1.25rem;
+	flex: 1;
+	overflow-y: hidden;
+	display: flex;
+}
+
+.add-file-wrapper {
+	overflow-y: auto;
+	width: 100%;
+}
+
+.file-input-wrapper {
+	display: block;
+	margin-bottom: 1rem;
+	margin-right: 1.25rem;
+}
+
+span.upload_files_section.open-popup-link, .file-input-wrapper>a {
+	display: block;
+}
+
+.file-upload {
+	height: 0;
+	width: 0;
+}
+
+.file-upload:focus {
+	outline: none;
+}
+
+.file-upload-label {
+	border-radius: 2.5px;
+	background-color: #f7f7f7;
+	border: solid 0.5px #979797;
+	padding: 0.875rem;
+	display: block;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 0.8125rem;
+	color: #2f7dc2;
+}
+
+.add-file-button {
+	border-radius: 2.5px;
+	background-color: #f7f7f7;
+	border: solid 0.0625rem #2f7dc2;
+	padding: 0.875rem 0;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 0.8125rem;
+	color: #2f7dc2;
+	display: block;
+	margin-top: 1rem;
+	margin-right: 1.25rem;
+}
+
+.login-button-block {
+	flex: 0 0 auto;
+}
+
+span.form-desc{
+	opacity: 0.5;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.8125rem;
+    text-align: center;
+    color: #3b3b3b;
+    display: block;
+    padding: 1.875rem 1.25rem;
+}
+
+@media handheld , only screen and (min-width: 768px) {
+	.my-files-container {
+		padding: 0 10%;
+		width: 80%;
+		max-width: 1200px;
+		margin: 0px auto;
+	}
+}
+@media handheld , only screen and (min-width: 992px) {
+	.main-section,.page-section,.page-form,.my-files-container,.my-files-block,.container,.secondary-header-section,footer 
+		{
+		display: block;
+	}
+	.my-files-container {
+		margin-bottom: 6.875rem;
+	}
+	body {
+		min-height: 100%;
+		height: auto;
+	}
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+}
