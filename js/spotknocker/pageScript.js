@@ -1,5 +1,3 @@
-const home_banner_video_btn = document.getElementById('home_banner_video_btn'); // button on banner video of home
-const banner_video = document.getElementById('banner_video');//banner video on home page
 var how_it_works_video_overlay = document.getElementsByClassName('how-it-works-video-overlay');//video overlay div
 var how_it_works_video = document.getElementsByClassName('how-it-works-video');//html5 video
 var open_popup_link =  document.getElementsByClassName('open-popup-link');
@@ -9,27 +7,27 @@ var popup_body = document.querySelectorAll('.popup');
 var choose_file_index;
 var upload_file_generated_text;
 var popup_close = document.getElementsByClassName('popup-close');
+var open_banner_video = document.getElementsByClassName('html5lightbox');
+const html5box_html5_lightbox =  document.getElementById('html5box-html5-lightbox');
+const lightbox_image =  document.getElementById('html5-lightbox-box');
 
-if(home_banner_video_btn !== null){
-	home_banner_video_btn.addEventListener('click', playBannerVideo);//function to play banner video on home
+function hideBody(e) {
+	navigation_menu.classList.add('navigation-menu-open');
+	body_tag.classList.add('nonscrollable-body');
+	lightbox_image.addEventListener('click', function(){
+	e.stopPropagation();
+	});
 }
-if(banner_video !== null){
-	banner_video.addEventListener('click', pauseBannerVideo);//function to pause banner video on home
+if(html5box_html5_lightbox !== null){
+html5box_html5_lightbox.addEventListener('click', function(){
+	navigation_menu.classList.remove('navigation-menu-open');
+	body_tag.classList.remove('nonscrollable-body');
+});
 }
-
-function playBannerVideo() {
-	banner_video.play();
-	home_banner_video_btn.classList.add('hide-play-button');
-	banner_video.onended = function() {
-		home_banner_video_btn.classList.remove('hide-play-button');
-	};
-}
-
-function pauseBannerVideo() {
-	banner_video.pause();
-	home_banner_video_btn.classList.remove('hide-play-button');
-}
-
+//function to open lightbox video
+Array.from(open_banner_video).forEach(function(element) {
+	element.addEventListener('click', hideBody);
+});
 function playVideo() {
 	//playing video and hiding overlay div
 	this.parentNode.querySelector('.how-it-works-video').play();
@@ -112,7 +110,7 @@ if (typeof jQuery !== 'undefined') {
 				choose_file_index = $(this).parent('.file-input-wrapper').attr('id');
 			});
 		});
-		
+
 		$('.image-delete').click(function(){
 			$(this).parents('.image-file-container').removeClass('show-image-file-container');
 		});
@@ -152,7 +150,7 @@ if (typeof jQuery !== 'undefined') {
 				bindClickToLink();
 			});
 		});
-		
+
 		$('#add_text_section').find('.login-button').click(function(){
 			upload_file_generated_text = $('#file_add_text_block').html();
 			$('#file_add_text_block').html('');
@@ -175,5 +173,3 @@ if (typeof jQuery !== 'undefined') {
 	});
 
 }
-
-
