@@ -1,6 +1,5 @@
-/**
- * Created by remi on 18/01/15.
- */
+//Function to add image grid in My Files PAge
+
 (function(){
 
 
