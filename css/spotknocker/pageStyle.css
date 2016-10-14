@@ -11,9 +11,18 @@
 	position: relative;
 }
 
-.banner-video-container video {
+.banner-video-block {
 	width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.banner-poster{
 	max-height: 254px;
+}
+
+#html5-watermark{
+	display: none!important;
 }
 
 #home_banner_video_btn, .how-it-works-video-btn {
@@ -583,7 +592,7 @@ div[contenteditable=true]:focus {
 }
 
 @media handheld , only screen and (min-width: 320px) and (max-width: 370px){
-	.page-image-container>img {
+	.page-image-container>img,.banner-poster {
 		width: 100%;
 	}
 }
