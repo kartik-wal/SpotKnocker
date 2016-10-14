@@ -25,6 +25,10 @@
 	display: none!important;
 }
 
+video#html5-lightbox-video {
+    height: 100%!important;
+}
+
 #home_banner_video_btn, .how-it-works-video-btn {
 	background-image: url(../../images/playButton.png);
 	background-repeat: no-repeat;
@@ -379,6 +383,7 @@
 	margin-top: 1.5rem;
 }
 
+/* PAGE CONTENT IN UPLOAD FILES */
 .generated-file-container,.slot-dropdown select, .image-file {
 	border-radius: 2.5px;
 	background-color: #f7f7f7;
@@ -528,6 +533,7 @@ div[contenteditable=true]:focus {
 	display: none;
 }
 
+/* MY FILES IMAGE GRID */
 #gallery .thumbnail {
 	font-size: 1rem;
 	overflow: hidden;
@@ -728,6 +734,7 @@ div[contenteditable=true]:focus {
 	.fb-login-button {
 		margin-bottom: 0.4375rem;
 	}
+	/* IMAGE GRIID IN MY FILES PAGE */
 	#gallery .thumbnail {
 		width: calc(10% - 0.125rem);
 		margin-bottom: 0.1875rem;
