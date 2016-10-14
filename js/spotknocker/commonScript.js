@@ -12,14 +12,13 @@ const search_bar_wrapper = document.getElementById('search_bar_wrapper');
 const close_search = document.getElementById('close_search');
 
 //variables for opening and closing navigation bar in mobile
-const menu_bar = document.getElementById('menu_bar');
+const menu_bar_icon = document.getElementById('menu_bar_icon');
 const close_nav = document.getElementById('close_nav');
 const body_tag =  document.getElementsByTagName('BODY')[0];
 const html_tag =  document.getElementsByTagName('HTML')[0];
 const container_tag =  document.getElementsByClassName('container')[0];
 const hello_text_container =  document.getElementsByClassName('hello-user-text')[0];
 const user_dropdown_wrapper = document.getElementsByClassName('user-dropdown-wrapper')[0];
-const desktop_nav = document.getElementsByClassName('desktop-nav')[0];
 
 //ALL FUNCTIONS
 //function to open and close search
@@ -27,7 +26,7 @@ open_search.addEventListener('click', openSearch);
 close_search.addEventListener('click', closeSearch);
 
 //function to open and close navigation in mobile
-menu_bar.addEventListener('click', openNavigation);
+menu_bar_icon.addEventListener('click', openNavigation);
 close_nav.addEventListener('click', closeNavigation);
 
 //function to open dropdown
@@ -59,10 +58,8 @@ function closeSearch() {
 
 //open navigation
 function openNavigation() {
-	 if(desktop_nav.style.display == 'none'){
 	navigation_menu.classList.add('navigation-menu-open');
 	body_tag.classList.add('nonscrollable-body');
-	 }
 }
 
 //close navigation
