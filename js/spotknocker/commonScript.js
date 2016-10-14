@@ -75,5 +75,9 @@ function openDropDown(event){
 	});
 }
 window.addEventListener('click', function(){
+	if(user_dropdown_wrapper != null){
 	user_dropdown_wrapper.classList.remove('display-user-dropdown');
+	}
 });
+
+
