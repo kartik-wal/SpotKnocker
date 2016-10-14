@@ -114,6 +114,10 @@ header {
 	width: 4%;
 }
 
+#menu_bar_icon{
+	display: block;
+}
+
 .menu-bar-icon {
 	width: 0.75rem;
 	height: 2.1px;
@@ -479,7 +483,7 @@ ul.user-dropdown-list>li a:hover{
 	}
 	/* NAVIGATION MENU */
 	.navigation-menu, .close-nav, .navigation-menu ul img,
-		.bottom-navigation, .menu-bar-icon {
+		.bottom-navigation, .menu-bar-icon,#menu_bar_icon {
 		display: none;
 	}
 	/* FOOTER */
