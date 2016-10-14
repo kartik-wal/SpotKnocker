@@ -20,7 +20,6 @@ const container_tag =  document.getElementsByClassName('container')[0];
 const hello_text_container =  document.getElementsByClassName('hello-user-text')[0];
 const user_dropdown_wrapper = document.getElementsByClassName('user-dropdown-wrapper')[0];
 
-//ALL FUNCTIONS
 //function to open and close search
 open_search.addEventListener('click', openSearch);
 close_search.addEventListener('click', closeSearch);
@@ -33,6 +32,7 @@ close_nav.addEventListener('click', closeNavigation);
 if(hello_text_container != null){
 hello_text_container.addEventListener('click', openDropDown);
 }
+
 //open search
 function openSearch() {
 	header.classList.add('header-open-search'); //adding class to header element
@@ -44,6 +44,7 @@ function openSearch() {
 	search_bar_wrapper.classList.add('search-bar-wrapper-open');
 
 }
+
 //close search
 function closeSearch() {
 	header.classList.remove('header-open-search'); //removing class from header element
@@ -67,6 +68,8 @@ function closeNavigation() {
 	navigation_menu.classList.remove('navigation-menu-open');
 	body_tag.classList.remove('nonscrollable-body');
 }
+
+//open dropdown when logged in
 function openDropDown(event){
 	event.stopPropagation();
 	user_dropdown_wrapper.classList.add('display-user-dropdown');
@@ -74,6 +77,7 @@ function openDropDown(event){
 		e.stopPropagation();
 	});
 }
+//close dropdown when clicked outside
 window.addEventListener('click', function(){
 	if(user_dropdown_wrapper != null){
 	user_dropdown_wrapper.classList.remove('display-user-dropdown');
