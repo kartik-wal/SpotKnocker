@@ -9,20 +9,22 @@ var upload_file_generated_text;
 var popup_close = document.getElementsByClassName('popup-close');
 var open_banner_video = document.getElementsByClassName('html5lightbox');
 const html5box_html5_lightbox =  document.getElementById('html5box-html5-lightbox');
-const lightbox_image =  document.getElementById('html5-lightbox-box');
+const lightbox_image =  document.getElementById('html5-image');
 
 function hideBody(e) {
-	navigation_menu.classList.add('navigation-menu-open');
-	body_tag.classList.add('nonscrollable-body');
+	body_tag.classList.remove('nonscrollable-body');
+	html_tag.classList.remove('nonscrollable-body');
+	container_tag.classList.remove('nonscrollable-body');
 	lightbox_image.addEventListener('click', function(){
 	e.stopPropagation();
 	});
 }
 if(html5box_html5_lightbox !== null){
 html5box_html5_lightbox.addEventListener('click', function(){
-	navigation_menu.classList.remove('navigation-menu-open');
-	body_tag.classList.remove('nonscrollable-body');
-});
+	body_tag.classList.add('nonscrollable-body');
+	html_tag.classList.add('nonscrollable-body');
+	container_tag.classList.add('nonscrollable-body');
+	});
 }
 //function to open lightbox video
 Array.from(open_banner_video).forEach(function(element) {
@@ -173,3 +175,5 @@ if (typeof jQuery !== 'undefined') {
 	});
 
 }
+
+
