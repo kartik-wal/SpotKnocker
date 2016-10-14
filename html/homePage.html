@@ -25,10 +25,11 @@
 
 						<div class="menu" id="menu_bar">
 							<!-- MENU ICON -->
+							<div id="menu_bar_icon">
 							<div class="menu-bar-icon"></div>
 							<div class="menu-bar-icon"></div>
 							<div class="menu-bar-icon"></div>
-
+                            </div>
 							<!-- HIDDEN NAV FOR DESKTOP -->
 							<ul class="desktop-nav">
 								<li><a href="homePage.html">How it Works</a></li>
@@ -112,19 +113,9 @@
 			<!-- banner video section -->
 			<section class="banner-section">
 				<div class="banner-video-container">
-					<button id="home_banner_video_btn"></button>
-					<video id="banner_video" poster="../images/deskEnvironment.png">
-					<!-- MP4 must be first for iPad! -->
-							<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4">
-							<!-- Safari / iOS, IE9 -->
-							<source src="http://clips.vorwaerts-gmbh.de/VfE.webm"
-								type="video/webm">
-							<!-- Chrome10+, Ffx4+, Opera10.6+ -->
-							<source src="http://clips.vorwaerts-gmbh.de/VfE.ogv"
-								type="video/ogg">
-							<!-- Firefox3.6+ / Opera 10.5+ -->
-
-					</video>
+				<a href="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" class="html5lightbox banner-video-block">
+				<button id="home_banner_video_btn"></button>
+						<img alt="Banner Image" src="../images/deskEnvironment.png" class="banner-poster"></a>
 				</div>
 
 				<div class="banner-video-footer">
@@ -298,6 +289,9 @@
 		</div>
 	</section>
 	<!-- FORGOT PASSWORD POPUP END -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+     <script type="text/javascript" src="../js/vendor/html5lightbox.js"></script>
 	<script type="text/javascript" src="../js/spotknocker/commonScript.js"></script>
 	<script type="text/javascript" src="../js/spotknocker/pageScript.js"></script>
 
