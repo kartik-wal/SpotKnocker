@@ -30,7 +30,7 @@ menu_bar_icon.addEventListener('click', openNavigation);
 close_nav.addEventListener('click', closeNavigation);
 
 //function to open dropdown
-if(hello_text_container !== null){
+if(hello_text_container != null){
 hello_text_container.addEventListener('click', openDropDown);
 }
 //open search
