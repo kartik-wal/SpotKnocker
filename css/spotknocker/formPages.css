@@ -1,5 +1,6 @@
 @CHARSET "UTF-8";
 
+/* HEADER */
 .container {
 	display: flex;
 	flex-flow: column;
@@ -10,16 +11,17 @@ header {
 	flex: 0 1 auto;
 }
 
+.secondary-header-section, footer {
+	display: none;
+}
+
+/* MAIN SECTION */
 .main-section, .page-section, .page-form, .my-files-container,
 	.my-files-block {
 	flex: 1 1 auto;
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-}
-
-.secondary-header-section, footer {
-	display: none;
 }
 
 .form-add-file-block {
