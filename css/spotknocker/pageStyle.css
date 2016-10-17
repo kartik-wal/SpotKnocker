@@ -15,10 +15,12 @@
 	width: 100%;
 	display: block;
 	text-align: center;
+	overflow-x: hidden
 }
 
-.banner-poster{
-	max-height: 254px;
+.banner-video-block>img {
+	width: auto;
+	max-height: 300px;
 }
 
 #html5-watermark{
@@ -32,8 +34,8 @@ video#html5-lightbox-video {
 #home_banner_video_btn, .how-it-works-video-btn {
 	background-image: url(../../images/playButton.png);
 	background-repeat: no-repeat;
-	width: 2.563rem;
-	height: 2.563rem;
+	width: 5.125rem;
+	height: 5.125rem;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -82,7 +84,7 @@ video#html5-lightbox-video {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 0.875rem;
 	color: #2296f3;
-	padding: 0.4375rem 0.75rem;
+	padding: 0.875rem 1.5rem;
 }
 
 .visit-calendar-wrapper img {
@@ -137,7 +139,6 @@ video#html5-lightbox-video {
 }
 
 .video-container video {
-	max-height: 210px;
 	width: 100%;
 }
 
@@ -152,6 +153,15 @@ video#html5-lightbox-video {
 
 .extra-section {
 	background-color: #f6f6f6;
+}
+
+.extra-section .page-section-limiter {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column-reverse;
 }
 
 .page-image-container {
@@ -413,6 +423,7 @@ video#html5-lightbox-video {
 .slot-dropdown select {
 	appearance: none;
 	-webkit-appearance: none;
+	-moz-appearance:none;
 	padding: 0.9375rem;
 	width: 100%;
 	margin-top: 0;
@@ -542,6 +553,7 @@ div[contenteditable=true]:focus {
 	width: calc(25% - 0.125rem);
 	margin-right: 0.0625rem;
 	position: relative;
+	z-index: 10000;
 }
 
 #gallery .thumbnail.add-new-item {
@@ -597,21 +609,25 @@ div[contenteditable=true]:focus {
 	display: none;
 }
 
-@media handheld , only screen and (min-width: 320px) and (max-width: 370px){
+@media handheld , only screen and (min-width: 320px) and (max-width: 560px){
 	.page-image-container>img,.banner-poster {
 		width: 100%;
 	}
 }
 /* MEDIA QUERY FOR TABLET AND DESKTOP */
 @media handheld , only screen and (min-width: 768px) {
+	
 	/* BANNER */
+	.banner-video-block {
+		overflow-x: auto
+	}
+	.banner-video-block>img {
+		width: 100%;
+		max-height: initial;
+	}
 	.banner-footer-text {
 		width: 70%;
 		font-size: 1rem;
-		padding-top: 0.4375rem;
-	}
-	.banner-footer-indicator{
-	    padding-top: 0.4375rem;
 	}
 	.banner-video-footer span.visit-calendar-wrapper {
 		display: block;
@@ -649,10 +665,20 @@ div[contenteditable=true]:focus {
 		float: right;
 	}
 	.video-container, .page-image-container {
-		width: 40%;
+		width: 60%;
 	}
 	.page-image-container {
 		text-align: left;
+	}
+	.page-section-limiter,.extra-section .page-section-limiter {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
 	}
 
 	/* OVERLAY */
@@ -773,6 +799,15 @@ div[contenteditable=true]:focus {
 		display: block;
 		margin-top: 0.875rem;
 	}
+	.banner-footer-wrapper {
+		display: table;
+		width: 100%;
+	}
+	span.banner-footer-text {
+		display: table-cell;
+		vertical-align: middle;
+		float: none;
+	}
 }
 
 figure {
@@ -784,6 +819,7 @@ figure {
 	max-width: 100%;
 	height: auto;
 	display: block;
+	z-index: 100000;
 }
 
 @media handheld , only screen and (min-width: 992px) {
