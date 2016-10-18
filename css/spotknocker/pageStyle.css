@@ -26,9 +26,10 @@
 
 .how-it-works-video-btn {
 	background-image: url(../../images/playButton.png);
+	background-size: 100%;
 	background-repeat: no-repeat;
-	width: 5.125rem;
-	height: 5.125rem;
+	width: 3.125rem;
+	height: 3.125rem;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -241,6 +242,7 @@
 }
 .popup-logo {
 	margin-top: 4.063rem;
+	width: 12.06rem;
 }
 
 .login-input-block {
@@ -263,6 +265,7 @@
 	font-size: 0.8125rem;
 	color: #3b3b3b;
 	margin-bottom: 0.75rem;
+	-webkit-appearance: none;
 }
 
 .login-credential:focus {
@@ -375,6 +378,11 @@
 	position: absolute;
 	right: 1.25rem;
 	top: 1.25rem;
+}
+
+
+.popup-close>img{
+	width: 0.75rem;
 }
 
 .login-form.submit-form .login-input-block {
@@ -660,6 +668,10 @@ div[contenteditable=true]:focus {
 	.video-container, .page-image-container {
 		width: 60%;
 	}
+	.how-it-works-video-btn {
+		width: 5.125rem;
+		height: 5.125rem;
+	}
 	.page-image-container {
 		text-align: left;
 	}
@@ -702,6 +714,7 @@ div[contenteditable=true]:focus {
 		margin: auto;
 		padding: 0 3.125rem;
 		width: 30%;
+		max-width: 14.38rem;
 	}
 	.popup-logo {
 		margin-top: 1.688rem;
