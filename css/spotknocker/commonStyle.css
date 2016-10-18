@@ -156,8 +156,13 @@ span.logo-page-header {
 }
 
 .search-bar img {
-    width: 14px;
+    width: 0.875rem;
 }
+
+.close-search{
+	width: 0.625rem;
+}
+
 .search-label-wrapper {
 	margin-top: 0.1875rem;
 	margin-left: -2.188rem;
@@ -215,8 +220,8 @@ span.logo-page-header {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 0.6875rem;
 	color: #3e3e3e;
-	padding-left: 5%;
-	width: 88.7%;
+	padding-left: 2%;
+	width: 87%;
 	outline: none;
 	border: none;
 }
@@ -238,15 +243,25 @@ span.logo-page-header {
 	color: #3e3e3e;
 }
 
+.secondary-header-nav>li>a>img{
+	width: 0.9375rem;
+}
+
 .hello-user-text {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 0.875rem;
 	cursor: pointer;
 }
 
-.hello-user-text img {
-	vertical-align: middle;
-	margin-left: 0.25rem;
+.user-options-dropdown{
+    width: 0;
+    height: 0;
+    border-left: 2.5px solid transparent;
+    border-right: 2.5px solid transparent;
+    border-top: 0.1875rem solid #3e3e3e;
+    display: inline-block;
+    margin-left: 0.25rem;
+    vertical-align: middle;
 }
 
 .user-dropdown-wrapper {
@@ -304,7 +319,7 @@ ul.user-dropdown-list>li a:hover{
 	width: 100%;
 	bottom: 0;
 	right: 101%;
-	z-index: 1000;
+	z-index: 100000;
 	-webkit-transition: all 0.25s ease;
 	-moz-transition: all 0.25s ease;
 	transition: all 0.25s ease;
@@ -364,6 +379,7 @@ ul.top-navigation {
 	margin-top: 1.25rem;
 	margin-right: 1.25rem;
 	align-self: flex-end;
+	width: 0.75rem;
 }
 /* FOOTER */
 .copyright-section {
