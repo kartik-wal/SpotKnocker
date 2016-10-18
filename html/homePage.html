@@ -116,9 +116,18 @@
 			<!-- banner video section -->
 			<section class="banner-section">
 				<div class="banner-video-container">
-				<a href="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" class="html5lightbox banner-video-block">
-				<button id="home_banner_video_btn"></button>
-						<img alt="Banner Image" src="../images/homeVideoBanner.png" class="banner-poster"></a>
+				<video class="how-it-works-video" autoplay="autoplay" id="banner-video">
+					<!-- MP4 must be first for iPad! -->
+							<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4">
+							<!-- Safari / iOS, IE9 -->
+							<source src="http://clips.vorwaerts-gmbh.de/VfE.webm"
+								type="video/webm">
+							<!-- Chrome10+, Ffx4+, Opera10.6+ -->
+							<source src="http://clips.vorwaerts-gmbh.de/VfE.ogv"
+								type="video/ogg">
+							<!-- Firefox3.6+ / Opera 10.5+ -->
+
+						</video>
 				</div>
 
 				<div class="banner-video-footer">
@@ -127,7 +136,7 @@
 							class="banner-footer-indicator"> <a href="#"><img
 								alt="Go to Calendar" src="../images/arrowRight.png"></a> <!-- hidden calendar box for desktop -->
 							<span class="visit-calendar-wrapper"><a href="#"> <img
-									alt="Visit Calendar" src="../images/calendar.png">Visit Home Page Calender</a> </span>
+									alt="Visit Calendar" src="../images/calendar.png">Visit Homepage Calendar</a> </span>
 						</span>
 
 						<!-- clearing floats -->

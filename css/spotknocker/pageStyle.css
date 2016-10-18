@@ -9,6 +9,7 @@
 }
 .banner-video-container, .video-container {
 	position: relative;
+	text-align: center;
 }
 
 .banner-video-block {
@@ -18,20 +19,12 @@
 	overflow-x: hidden
 }
 
-.banner-video-block>img {
-	width: auto;
-	max-height: 300px;
+#banner-video {
+	width: 100%;
+	max-width: 1200px;
 }
 
-#html5-watermark{
-	display: none!important;
-}
-
-video#html5-lightbox-video {
-    height: 100%!important;
-}
-
-#home_banner_video_btn, .how-it-works-video-btn {
+.how-it-works-video-btn {
 	background-image: url(../../images/playButton.png);
 	background-repeat: no-repeat;
 	width: 5.125rem;
@@ -52,7 +45,7 @@ video#html5-lightbox-video {
 	z-index: 10;
 }
 
-#home_banner_video_btn:focus, .how-it-works-video-btn:focus {
+.how-it-works-video-btn:focus {
 	outline: none;
 }
 
