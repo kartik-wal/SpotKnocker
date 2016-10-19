@@ -61,7 +61,7 @@ function closeSearch() {
 function openNavigation() {
 	body_tag.classList.add('nonscrollable-body');
 	html_tag.classList.add('nonscrollable-body');
-	container_tag.classList.add('nonscrollable-body');
+	navigation_menu.classList.add('nonscrollable-body');
 }
 
 //close navigation
