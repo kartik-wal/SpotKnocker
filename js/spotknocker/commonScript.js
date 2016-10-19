@@ -59,9 +59,10 @@ function closeSearch() {
 
 //open navigation
 function openNavigation() {
+	navigation_menu.classList.add('navigation-menu-open');
 	body_tag.classList.add('nonscrollable-body');
 	html_tag.classList.add('nonscrollable-body');
-	navigation_menu.classList.add('nonscrollable-body');
+	container_tag.classList.add('nonscrollable-body');
 }
 
 //close navigation
@@ -69,6 +70,7 @@ function closeNavigation() {
 	navigation_menu.classList.remove('navigation-menu-open');
 	body_tag.classList.remove('nonscrollable-body');
 	html_tag.classList.remove('nonscrollable-body');
+	container_tag.classList.remove('nonscrollable-body');
 }
 
 //open dropdown when logged in
