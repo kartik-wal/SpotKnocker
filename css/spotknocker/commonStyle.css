@@ -1295,9 +1295,16 @@ figure {
 		padding: 0px 10% 0px;
 		height: 4.875rem;
 	}
+	.header-wrapper {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: row;
+	}
 	.primary-header-section {
-		float: left;
-		width: 84%;
+		flex: 1;
 		height: auto;
 		background: transparent;
 		border-top: none;
@@ -1366,7 +1373,7 @@ figure {
 	.secondary-header-section {
 		background-color: transparent;
 		padding: 1.875rem 0;
-		width: 16%;
+		width: auto%;
 		text-align: left;
 		overflow: hidden;
 		margin-top: 0px;
