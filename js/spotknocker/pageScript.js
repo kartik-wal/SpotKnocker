@@ -11,6 +11,9 @@ var popup_close = document.getElementsByClassName('popup-close');
 var open_banner_video = document.getElementsByClassName('html5lightbox');
 const html5box_html5_lightbox =  document.getElementById('html5box-html5-lightbox');
 const lightbox_image =  document.getElementById('html5-image');
+var body_tag =  document.getElementsByTagName('BODY')[0];
+var html_tag =  document.getElementsByTagName('HTML')[0];
+var container_tag =  document.getElementsByClassName('container')[0];
 
 //function to add scrollable body when video popup closes
 function hideBody(e) {

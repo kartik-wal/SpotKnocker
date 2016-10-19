@@ -196,7 +196,7 @@ span.logo-page-header {
 
 .search-bar-wrapper {
 	float: left;
-	width: 96%;
+	width: 94%;
 	-webkit-transition: all 0.75s ease;
 	-moz-transition: all 0.75s ease;
 	-o-transition: all 0.75s ease;
@@ -376,10 +376,10 @@ ul.top-navigation {
 
 .close-nav {
 	float: right;
-	margin-top: 1.25rem;
-	margin-right: 1.25rem;
+	padding-top: 1.25rem; padding-right : 1.25rem;
 	align-self: flex-end;
 	width: 0.75rem;
+	padding-right: 1.25rem;
 }
 /* FOOTER */
 .copyright-section {

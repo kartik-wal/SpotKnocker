@@ -5,18 +5,18 @@ const header = document.getElementsByTagName('HEADER')[0]; //header
 const primary_header_wrapper = document.getElementsByClassName('primary-header-wrapper')[0];
 const secondary_header_section = document.getElementsByClassName('secondary-header-section')[0];
 const top_navigation = document.getElementsByClassName('top-navigation')[0];
-const navigation_menu = document.getElementById('navigation_menu');
-const open_search = document.getElementById('open_search');//search icon
-const search_bar_section = document.getElementById('search_bar_section');
-const search_bar_wrapper = document.getElementById('search_bar_wrapper');
-const close_search = document.getElementById('close_search');
+var navigation_menu = document.getElementById('navigation_menu');
+var open_search = document.getElementById('open_search');//search icon
+var search_bar_section = document.getElementById('search_bar_section');
+var search_bar_wrapper = document.getElementById('search_bar_wrapper');
+var close_search = document.getElementById('close_search');
 
 //variables for opening and closing navigation bar in mobile
-const menu_bar_icon = document.getElementById('menu_bar_icon');
-const close_nav = document.getElementById('close_nav');
-const body_tag =  document.getElementsByTagName('BODY')[0];
-const html_tag =  document.getElementsByTagName('HTML')[0];
-const container_tag =  document.getElementsByClassName('container')[0];
+var menu_bar_icon = document.getElementById('menu_bar_icon');
+var close_nav = document.getElementById('close_nav');
+var body_tag =  document.getElementsByTagName('BODY')[0];
+var html_tag =  document.getElementsByTagName('HTML')[0];
+var container_tag =  document.getElementsByClassName('container')[0];
 const hello_text_container =  document.getElementsByClassName('hello-user-text')[0];
 const user_dropdown_wrapper = document.getElementsByClassName('user-dropdown-wrapper')[0];
 
