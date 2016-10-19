@@ -639,7 +639,6 @@ div[contenteditable=true]:focus {
 	/* PAGE CONTENT */
 	.textual-page-section-wrapper, .page-image-container {
 		float: left;
-		padding: 0;
 		padding-right: 5%;
 	}
 	.textual-page-section-wrapper, .extra-section .textual-page-section-wrapper {
@@ -666,7 +665,6 @@ div[contenteditable=true]:focus {
 	}
 	.video-container, .extra-section .textual-page-section-wrapper {
 		float: right;
-		padding: 0;
 	}
 	.video-container, .page-image-container {
 		width: 55%;
@@ -838,5 +836,12 @@ figure {
 	.page-section-wrapper {
 		padding: 3.125rem 10%;
 		    width: 80%
+	}
+	.textual-page-section-wrapper, .page-image-container {
+		float: left;
+		padding-left: 0;
+	}
+	.video-container, .extra-section .textual-page-section-wrapper {
+		padding: 0;
 	}
 }
