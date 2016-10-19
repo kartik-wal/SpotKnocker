@@ -113,9 +113,7 @@ Array.from(popup_overlay).forEach(function(element) {
 
 });
 if (typeof jQuery !== 'undefined') {
-	//alert("here");
 	$(document).ready(function() {
-		//alert("here");
 		
 		//get ID when upload button is clicked in upload files page
 		$('.upload_files_section').each(function () {
@@ -155,7 +153,6 @@ if (typeof jQuery !== 'undefined') {
 		//clone element in upload files page
 		var file_counter=1;
 		$('.add-file-button').click(function () {
-			//alert("clicked")
 			var clone = $('#file_input_wrapper_0').clone();
 			clone.attr('id', 'file_input_wrapper_'+file_counter);
 			clone.find('.file-upload-label').text('Choose File...');
@@ -171,7 +168,6 @@ if (typeof jQuery !== 'undefined') {
 
 		//get text added and place it in the page of upload files page
 		$('#add_text_submit').click(function(){
-			//alert("clicked")
 			upload_file_generated_text = $('#file_add_text_block').html();
 			$('#file_add_text_block').html('');
 			$('#add_text_section').removeClass('open-popup-overlay');
