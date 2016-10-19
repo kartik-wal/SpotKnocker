@@ -535,6 +535,16 @@ ul.top-navigation {
 	width: 0.75rem;
 }
 
+.video-container {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
 .video-container video {
 	width: 100%;
 	border-radius: 5px;
@@ -548,6 +558,8 @@ ul.top-navigation {
 	right:0;
 	height: 100%;
 	z-index: 100;
+	border-radius: 5px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 .extra-section {
