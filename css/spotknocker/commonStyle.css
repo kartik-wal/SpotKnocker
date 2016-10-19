@@ -111,7 +111,7 @@ header {
 }
 
 .menu, .search-bar, .search-close-wrapper {
-	width: 6%;
+	width: 10%;
 }
 
 #menu_bar_icon{
@@ -128,7 +128,7 @@ header {
 }
 
 .logo-page-content {
-	width: 88%;
+	width: 80%;
 	text-align: center;
 	margin-top: -0.625rem;
 }
@@ -196,7 +196,7 @@ span.logo-page-header {
 
 .search-bar-wrapper {
 	float: left;
-	width: 94%;
+	width: 89%;
 	-webkit-transition: all 0.75s ease;
 	-moz-transition: all 0.75s ease;
 	-o-transition: all 0.75s ease;
@@ -220,8 +220,8 @@ span.logo-page-header {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 0.6875rem;
 	color: #3e3e3e;
-	padding-left: 2%;
-	width: 87%;
+	padding-left: 0%;
+	width: 92%;
 	outline: none;
 	border: none;
 }
@@ -664,6 +664,10 @@ ul.top-navigation {
 	color: #3b3b3b;
 	margin-bottom: 0.75rem;
 	-webkit-appearance: none;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	padding-left: 0;
 }
 
 .login-credential:focus {
