@@ -207,8 +207,9 @@ span.logo-page-header {
 	margin-left: -96%;
 }
 
-#search_icon{
- width: 14px;
+#search_icon {
+	width: 0.875rem;
+	vertical-align: middle;
 }
 
 .search-bar-wrapper-open {
@@ -1038,8 +1039,12 @@ div[contenteditable=true]:focus {
 		-webkit-overflow-scrolling: touch;
 	}
 	/* HEADER */
-	.navigation-menu li a, .navigation-menu li>span, .secondary-header-nav li>a,.secondary-header-nav li>span, #search_input, .copyright-text {
+	.navigation-menu li a, .navigation-menu li>span, .secondary-header-nav li>a,
+		.secondary-header-nav li>span, #search_input, .copyright-text {
 		font-size: 0.875rem;
+	}
+	#search_input {
+		padding-left: 2%;
 	}
 	/* NAVIGATION */
 	.navigation-menu ul {
