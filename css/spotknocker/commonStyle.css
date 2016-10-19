@@ -537,6 +537,8 @@ ul.top-navigation {
 
 .video-container video {
 	width: 100%;
+	border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 .how-it-works-video-overlay {
@@ -578,7 +580,7 @@ ul.top-navigation {
 }
 
 .textual-page-section-wrapper, .video-container, .page-image-container {
-	padding: 0 1.25rem;
+	margin: 0 1.25rem;
 }
 
 /* OVERLAY */
@@ -1083,6 +1085,7 @@ div[contenteditable=true]:focus {
 	.textual-page-section-wrapper, .page-image-container {
 		float: left;
 		padding-right: 5%;
+		margin-right: 0;
 	}
 	.textual-page-section-wrapper, .extra-section .textual-page-section-wrapper {
 		width: 40%;
@@ -1108,6 +1111,7 @@ div[contenteditable=true]:focus {
 	}
 	.video-container, .extra-section .textual-page-section-wrapper {
 		float: right;
+		margin-left: 0;
 	}
 	.video-container, .page-image-container {
 		width: 55%;
@@ -1419,8 +1423,10 @@ figure {
 	.textual-page-section-wrapper, .page-image-container {
 		float: left;
 		padding-left: 0;
+		margin-left: 0;
 	}
 	.video-container, .extra-section .textual-page-section-wrapper {
 		padding: 0;
+		margin-right: 0;
 	}
 }
