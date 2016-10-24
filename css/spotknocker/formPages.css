@@ -18,7 +18,7 @@ header {
 	flex: 0 1 auto;
 }
 
-logged-in-header .secondary-header-section, footer.logged-in-footer {
+.logged-in-header .secondary-header-section, footer.logged-in-footer {
 	display: none;
 }
 
