@@ -8,7 +8,6 @@ var popup_body = document.querySelectorAll('.popup');
 var choose_file_index;
 var upload_file_generated_text;
 var popup_close = document.getElementsByClassName('popup-close');
-var open_banner_video = document.getElementsByClassName('html5lightbox');
 const html5box_html5_lightbox =  document.getElementById('html5box-html5-lightbox');
 const lightbox_image =  document.getElementById('html5-image');
 var body_tag =  document.getElementsByTagName('BODY')[0];
@@ -24,19 +23,7 @@ function hideBody(e) {
 	e.stopPropagation();
 	});
 }
-if(html5box_html5_lightbox !== null){
-//function to hide scrollable body when video popup opens
-html5box_html5_lightbox.addEventListener('click', function(){
-	body_tag.classList.add('nonscrollable-body');
-	html_tag.classList.add('nonscrollable-body');
-	container_tag.classList.add('nonscrollable-body');
-	});
-}
 
-//function to open lightbox video
-Array.from(open_banner_video).forEach(function(element) {
-	element.addEventListener('click', hideBody);
-});
 
 function playVideo() {
 	//playing video and hiding overlay div
