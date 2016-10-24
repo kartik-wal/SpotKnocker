@@ -1218,6 +1218,17 @@ div[contenteditable=true]:focus {
 	.fb-login-button {
 		margin-bottom: 0.4375rem;
 	}
+	#forgot_password_section .popup-heading {
+		font-size: 1.375rem;
+		color: #54a4eb;
+	}
+	#forgot_password_section .popup-body {
+		margin-top: 0;
+	}
+	#forgot_password_section .popup-close {
+		display: none;
+	}
+
 	/* IMAGE GRIID IN MY FILES PAGE */
 	#gallery .thumbnail {
 		width: calc(10% - 0.125rem);
