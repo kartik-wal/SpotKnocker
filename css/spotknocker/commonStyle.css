@@ -1427,9 +1427,6 @@ figure {
 		z-index: 1;
 		padding: 1.875rem 0;
 	}
-	.search-bar-section-open {
-		top: -4rem;
-	}
 	.close-search {
 		cursor: pointer;
 	}
