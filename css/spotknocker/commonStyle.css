@@ -146,7 +146,7 @@ header {
     height: 2.375rem;
 }
 
-span.logo-page-header {
+.logo-page-header {
 	font-size: 0.9375rem;
 	font-weight: bold;
 	text-align: center;
@@ -1467,7 +1467,7 @@ figure {
 	}
 	/* NAVIGATION MENU */
 	.navigation-menu, .close-nav, .navigation-menu ul img,
-		.bottom-navigation, .menu-bar-icon,#menu_bar_icon,span.logo-page-header {
+		.bottom-navigation, .menu-bar-icon,#menu_bar_icon,.logo-page-header {
 		display: none;
 	}
 	/* FOOTER */
