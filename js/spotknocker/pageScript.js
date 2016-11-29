@@ -13,6 +13,7 @@ const lightbox_image =  document.getElementById('html5-image');
 var body_tag =  document.getElementsByTagName('BODY')[0];
 var html_tag =  document.getElementsByTagName('HTML')[0];
 var container_tag =  document.getElementsByClassName('container')[0];
+var file_delete_icon = document.getElementsByClassName('delete-file');
 
 //function to add scrollable body when video popup closes
 function hideBody(e) {
@@ -20,7 +21,7 @@ function hideBody(e) {
 	html_tag.classList.remove('nonscrollable-body');
 	container_tag.classList.remove('nonscrollable-body');
 	lightbox_image.addEventListener('click', function(){
-	e.stopPropagation();
+		e.stopPropagation();
 	});
 }
 
@@ -102,9 +103,12 @@ Array.from(popup_overlay).forEach(function(element) {
 	});
 
 });
+
+
+
 if (typeof jQuery !== 'undefined') {
 	$(document).ready(function() {
-		
+
 		//get ID when upload button is clicked in upload files page
 		$('.upload_files_section').each(function () {
 			$(this).click(function(){
@@ -116,7 +120,7 @@ if (typeof jQuery !== 'undefined') {
 		$('.image-delete').click(function(){
 			$(this).parents('.image-file-container').removeClass('show-image-file-container');
 		});
-		
+
 		//binding functions in cloned element in upload files page
 		function bindClickToLink() {	
 			$('.upload_files_section').click(function(){
@@ -176,6 +180,13 @@ if (typeof jQuery !== 'undefined') {
 
 		});
 
+		$(document).on('click', '.delete-file',function() {
+			if (confirm("Delete The File?") == true) {
+				$(this).parents('.thumbnail').remove();
+			} else {
+//				do nothing
+			}
+		});
 	});
 
 }
