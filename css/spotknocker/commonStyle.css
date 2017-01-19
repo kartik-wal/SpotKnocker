@@ -72,7 +72,7 @@ html, .container {
 }
 
 body {
-	margin: 0px;
+	margin: 0;
 	padding: 0;
 	line-height: normal;
 	height: 100%;
@@ -84,7 +84,7 @@ header {
 
 .header-wrapper, .copyright-wrapper, .search-bar-section-wrapper {
 	max-width: 1200px;
-	margin: 0px auto;
+	margin: 0 auto;
 	width: 100%;
 }
 
@@ -159,7 +159,7 @@ body,.header-wrapper {
 
 .search-bar {
 	text-align: right;
-	padding: 0.25rem 0px 0.625rem 0px;
+	padding: 0.25rem 0 0.625rem 0;
 }
 
 .search-bar img {
@@ -173,7 +173,7 @@ body,.header-wrapper {
 
 .close-search {
 	width: 0.625rem;
-	padding: 0.625rem 0px 0.625rem 0;
+	padding: 0.625rem 0 0.625rem 0;
 }
 
 .search-label-wrapper {
@@ -295,7 +295,7 @@ body,.header-wrapper {
 	right: 5%;
 	border-left: 0.3125rem solid transparent;
 	border-right: 0.3125rem solid transparent;
-	filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, .5));
+	filter: drop-shadow(0 0 0 rgba(0, 0, 0, .5));
 	border-bottom: 0.3125rem solid #fff;
 }
 
@@ -411,7 +411,7 @@ ul.top-navigation {
 
 .banner-footer-wrapper, .page-section-limiter, .my-files-container {
 	max-width: 1200px;
-	margin: 0px auto;
+	margin: 0 auto;
 	width: 100%;
 }
 
@@ -556,8 +556,8 @@ ul.top-navigation {
 
 .video-container video, .container.formless-page .how-it-works-item{
 	width: 100%;
-	border-radius: 5px;
-	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
+	border-radius: 0.3125rem;
+	box-shadow: 0 0 0.375rem 0 rgba(0, 0, 0, 0.4);
 }
 
 .how-it-works-video-overlay {
@@ -567,8 +567,8 @@ ul.top-navigation {
 	right: 0;
 	height: 100%;
 	z-index: 100;
-	border-radius: 5px;
-	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
+	border-radius: 0.3125rem;
+	box-shadow: 0 0 0.375rem 0 rgba(0, 0, 0, 0.4);
 }
 
 .extra-section {
@@ -811,7 +811,7 @@ ul.top-navigation {
 
 .popup-close>img {
 	width: 0.75rem;
-	padding: 0px 0 0 1.25rem;
+	padding: 0 0 0 1.25rem;
 }
 
 .login-form.submit-form .login-input-block {
@@ -1081,7 +1081,374 @@ div[contenteditable=true]:focus {
 	margin-right: 0.625rem;
 }
 
-@media handheld , only screen and (min-width:320px) and (max-width:560px) {
+/* Admin Panel */
+.my-files-container.admin-panel-container,.admin-user-add-wrapper>form, .admin-user-list-item,
+.admin-subscription-plan-price-wrapper,.admin-screen-mgmt-spot-list-item,.admin-sk-user-name-wrapper,
+.admin-screen-mgmt-name.admin-manage-user-tab-header {
+	margin-top: 3.75rem;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.admin-panel-options {
+	width: 30%;
+	margin-right: 1.875rem;
+	padding-left: 2.5rem;
+	position: relative;
+}
+
+.admin-panel-content {
+	width: 70%;
+}
+
+.admin-panel-content, .admin-panel-options {
+	box-shadow: 0 0 0.375rem 0 rgba(0, 0, 0, 0.2);
+	border-radius: 0.625rem;
+	height: 100%;
+}
+
+.admin-group-item,.admin-account-link {
+	padding: 1.688rem 0;
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 1.375rem;
+	border-bottom: 1px solid #979797;
+	display: block;
+	color: #AFAFAF;
+	padding-right: 0.625rem;
+}
+
+.admin-group-item.active {
+	color: #54A4EB;
+}
+
+a.admin-group-item:nth-last-child(2) {
+   margin-bottom: 21.88rem;
+}
+
+.admin-account-link {
+	position: absolute;
+	bottom: 0;
+	border-bottom: none;
+	border-top: 1px solid #979797;
+	right: 0;
+	left: 2.5rem;
+}
+
+.admin-user-add-wrapper>form {
+	margin-top: 0;
+}
+
+.admin-search-user {
+	width: 78%;
+	margin-right: 0.3125rem;
+	background-color: #F4F4F4;
+	border-radius: 0.125rem;
+	border: none;
+	padding: 1.313rem 0 1.313rem 2.938rem;
+	font-size: 0.875rem;
+	color: #B0B0B0;
+	margin: 0;
+}
+
+.add-new-user-admin  {
+	margin: 0;
+	background-color: #1D94F3;
+	width: 22%;
+	text-align: center;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: #FFFFFF;
+	border-top-right-radius: 0.625rem;
+	border: none;
+	padding: 0;
+}
+
+.admin-user-wrapper {
+	padding-left: 2.5rem;
+	padding-bottom: 1.25rem;
+}
+
+.admin-user-list-item {
+	margin: 0;
+	padding: 1.25rem 0;
+	align-items: center;
+	border-bottom: 1px solid #979797;
+}
+
+.admin-user-item-image {
+	border-radius: 3.125rem;
+	width: 1.875rem;
+	margin-right: 0.625rem;
+	vertical-align: middle;
+}
+
+.admin-user-item-name  {
+	font-size: 0.875rem;
+	color: #54A4EB;
+}
+
+.admin-user-item-delete,.admin-screen-mgmt-expand,.admin-manage-user-next {
+	margin-right: 2.5rem;
+}
+
+.admin-panel-content .admin-tab-content:not(.active){
+	display: none;
+}
+
+.admin-subscription-plan-block{
+	border: 1px solid #E2E2E2;
+    border-radius: 0.625rem;
+    margin: 1.875rem;
+    padding: 2.5rem 2.188rem;
+}
+.admin-subscription-plan-name {
+    font-size: 1.125rem;
+    font-weight: 500;
+	line-height: 1.375rem;
+	color: #54A4EB;
+	margin-bottom: 1.063rem;
+	display: block;
+}
+
+.admin-subscription-plan-detail {
+	font-size: 1rem;
+	line-height: 1.625rem;
+	color: #3B3B3B;
+}
+
+.admin-subscription-plan-listing {
+	margin-top: 1.875rem;
+	display: table;
+}
+
+.admin-subscription-plan-listing li {
+	display: table;
+	margin-bottom: 0.9375rem;
+}
+
+.admin-subscription-plan-listing li:before {
+	content: "-";
+	display: table-cell;
+	text-align: right;
+	padding-right: 0.3125rem;
+}
+
+.admin-subscription-plan-price  {
+	border: 1px solid #B8B8B8;
+	border-radius: 0.625rem;
+	margin-top: 3.125rem;
+}
+
+.admin-subscription-plan-price-text {
+    background-color: #F3F3F3;
+    padding: 1.875rem 1.063rem;
+    display: block;
+    width: 40%;
+    float: left;
+    border-top-left-radius: 0.625rem;
+    border-bottom-left-radius: 0.625rem;
+	font-size: 1rem;
+	font-style: italic;
+	color: #3B3B3B;
+}
+
+.admin-subscription-plan-price-wrapper{
+	margin: 0;
+    width: 50%;
+    align-items: center;
+	padding: 1.688rem 0;
+	font-size: 1rem;
+	line-height: 1.625rem;
+	color: #3B3B3B;
+	position: relative;
+}
+
+.subscription-plan-price-input-block {
+    padding-left: 2.5rem;
+}
+
+.subscription-plan-price-currency, .subscription-plan-price-input {
+	color: #878787;
+}
+
+.subscription-plan-price-input {
+	color: #878787;
+	font-size: 1rem;
+	border: none;
+	min-width: 2.313rem;
+	width: 2%;
+	display: inline-block;
+}
+
+.user-options-dropdown.admin-subscription-price-dropdown-icon {
+    margin-right: 1.563rem;
+}
+
+.user-dropdown-wrapper.display-user-dropdown.admin-subscription-price-dropdown
+	{
+	width: 50%;
+	top: 3.125rem;
+	right: 1rem;
+	display: none;
+}
+
+.admin-subscription-price-dropdown-option {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #3E3E3E;
+}
+
+.admin-subscription-price-dropdown-option{
+	cursor: pointer;
+	
+}
+
+.admin-subscription-price-dropdown-option.active {
+	color: #2296F3;
+}
+
+.admin-screen-mgmt-item-image {
+	border-radius: 3.125rem;
+	width: 4.375rem;
+	margin-right: 0.9375rem;
+	vertical-align: middle;
+}
+
+.admin-screen-mgmt-name-wrapper {
+	display: inline-block;
+}
+
+.admin-screen-mgmt-name {
+	display: block;
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 1.375rem;
+	color: #54A4EB;
+	margin-bottom: 0.5rem;
+}
+
+.admin-screen-mgmt-by-name {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #3B3B3B;
+}
+
+.admin-screen-mgmt-spot-wrapper {
+	background-color: #F8F8F8;
+	margin-left: -2.5rem;
+	padding: 0 0 0 5rem;
+	display: none;
+}
+
+.admin-screen-mgmt-spot-list-item {
+	padding: 1rem 2.5rem 1rem 0;
+	border-bottom: 1px solid #DBDBDB;
+	margin: 0;
+}
+
+.admin-screen-mgmt-spot-number {
+	font-size: 0.9375rem;
+	line-height: 1.188rem;
+	color: #4C4C4C;
+}
+
+.admin-screen-mgmt-delete-item {
+	margin-left: 1.25rem;
+}
+
+.admin-screen-mgmt-collapse-item {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.admin-manage-user-screen-image{
+	vertical-align: top;
+}
+
+.admin-manage-user-screen-name{
+	margin-bottom: 0;
+}
+
+.admin-manage-user-screen-search {
+	width: 100%;
+}
+
+.admin-screen-mgmt-name.admin-manage-user-screen-name.admin-sk-account-header
+	{
+	padding: 1.875rem 2.5rem;
+	border-bottom: 1px solid #979797;
+	font-size: 1rem;
+}
+
+.admin-manage-user-email,.admin-screen-mgmt-name.admin-manage-user-screen-name.admin-manage-user-tab-header{
+	font-size: 0.875rem;
+}
+
+.admin-sk-user-name-wrapper {
+	padding: 1.75rem 0;
+	border-bottom: 1px solid #979797;
+	margin: 0;
+}
+
+.admin-sk-account-value {
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 1.375rem;
+	color: #898989;
+	padding-right: 1.875rem;
+}
+.admin-user-wrapper.admin-sk-account-wrapper {
+    padding-bottom: 0;
+	margin-bottom: 30.63rem;
+}
+
+.admin-sk-account-modify-wrapper {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	float: right;
+	padding: 0 1.875rem 2.5rem 0;
+}
+
+.admin-sk-account-modify-wrapper .admin-screen-mgmt-name.admin-manage-user-screen-name{
+	margin-left: 0.625rem;
+}
+
+.admin-manage-user-go-back-icon {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	transform: rotate(180deg);
+	margin-right: 0.625rem;
+	vertical-align: middle;
+}
+
+.admin-screen-mgmt-name.admin-manage-user-tab-header{
+	margin-top: 0;
+}
+
+.manage-user-screen-tab-link-wrapper li {
+    display: inline-block;
+    margin-left: 0.625rem;
+}
+.manage-user-screen-tab-link-wrapper li:not(.active){
+	color: #AFAFAF;
+}
+
+@media handheld , only screen and (min-width:320px) and (max-width:560px){
 	.page-image-container>img, .banner-poster {
 		width: 100%;
 	}
@@ -1193,7 +1560,7 @@ div[contenteditable=true]:focus {
 		font-size: 1rem;
 	}
 	.know-more-link-wrapper {
-		margin: 1.125rem 0 0px;
+		margin: 1.125rem 0 0;
 	}
 	.know-more-link-wrapper img {
 		width: auto
@@ -1413,7 +1780,7 @@ div[contenteditable=true]:focus {
 		margin: 3.75rem 0 1.875rem;
 	}
 	.faq-contact-link .policy-text {
-		line-height: 33px;
+		line-height: 2.063rem;
 	}
 	.privacy-policy-list {
 		display: table;
@@ -1497,7 +1864,7 @@ figure {
 @media handheld , only screen and (min-width:992px) {
 	header {
 		border-top: 0.125rem solid #2f7dc2;
-		padding: 0px 5% 0px;
+		padding: 0 5% 0;
 		height: 4.875rem;
 	}
 	.header-wrapper {
@@ -1581,7 +1948,7 @@ figure {
 		width: auto;
 		text-align: left;
 		overflow: hidden;
-		margin-top: 0px;
+		margin-top: 0;
 		-webkit-transition: margin-top 0.25s ease;
 		-moz-transition: margin-top 0.25s ease;
 		-o-transition: margin-top 0.25s ease;

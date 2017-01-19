@@ -108,6 +108,86 @@ Array.from(popup_overlay).forEach(function(element) {
 if (typeof jQuery !== 'undefined') {
 	$(document).ready(function() {
 
+		//Function to delete Admin User 
+		$(document).on('click', '.admin-user-item-delete',function() {
+			$(this).parent('.admin-user-list-item').remove();
+			
+		});
+
+		//Function to select Tab option in Admin page 
+		$(document).on('click', '.admin-panel-options>.admin-group-item',function(e) {
+		        e.preventDefault();
+		        $(this).siblings('a.active').removeClass("active");
+		        $(this).addClass("active");
+		        var index = $(this).index();
+		        $(".admin-panel-content>.admin-tab-content").removeClass("active");
+		        $(".admin-panel-content>.admin-tab-content").eq(index).addClass("active");
+		    });
+		
+		//Function to change colour of Subscription Price's text box when there's value and no value 
+		$(document).on('keyup', '.subscription-plan-price-input', function(){ 
+			var chars = $(this).val().length; 
+			if(chars > 0){
+				$('.subscription-plan-price-input, .subscription-plan-price-currency').css('color','#3B3B3B');
+			}
+			else{
+				$('.subscription-plan-price-input, .subscription-plan-price-currency').css('color','#878787');
+			}
+			    });
+		
+		//Function to open/close the dropdown under Subscription price in Admin page 
+		$(document).on('click', '.admin-subscription-price-dropdown-icon-wrapper',function(e) {
+			$(this).next('.user-dropdown-wrapper.display-user-dropdown.admin-subscription-price-dropdown').toggle();
+		});
+		
+		//Function to close the dropdown under Subscription price in Admin page 
+		$(document).on('click', function(event){
+			if( !event ) event = window.event;
+			if (!$(event.target).closest('.user-dropdown-wrapper.display-user-dropdown.admin-subscription-price-dropdown').length && !$(event.target).closest('.admin-subscription-price-dropdown-icon-wrapper').length) {
+				$('.user-dropdown-wrapper.display-user-dropdown.admin-subscription-price-dropdown').hide();
+
+			}
+		});
+		
+		//Function to enable/disable input text when subscription list option is selected 
+		$(document).on('click', '.admin-subscription-price-dropdown-option',function(e) {
+			var subscripton_price_option = $(this).attr('value');
+			$(this).siblings('li.active').removeClass("active");
+			$(this).addClass('active');
+			if(subscripton_price_option.toLowerCase() == 'free'){
+		
+				$(this).parents('.admin-subscription-plan-price-wrapper').find('.subscription-plan-price-input').attr('disabled','disabled');
+			}
+			else{
+				$(this).parents('.admin-subscription-plan-price-wrapper').find('.subscription-plan-price-input').removeAttr('disabled');
+			}
+			$(this).parents('.user-dropdown-wrapper.display-user-dropdown.admin-subscription-price-dropdown').hide();
+		});
+		
+		//Function to expand/collapse screens in Admin page 
+		$(document).on('click', '.admin-screen-mgmt-expand',function(e) {
+			if($(this).parent('.admin-user-list-item').next().css('display')=="block"){
+			    $(this).removeClass('admin-screen-mgmt-collapse-item');
+				$(this).parent('.admin-user-list-item').next().slideUp();
+			}
+			else{
+		    $('.admin-screen-mgmt-expand').removeClass('admin-screen-mgmt-collapse-item');
+			$(this).addClass('admin-screen-mgmt-collapse-item');	
+			 $(".admin-screen-mgmt-spot-wrapper").slideUp();
+			$(this).parent('.admin-user-list-item').next().slideDown();
+			}
+		});
+		
+		//Function to delete Admin Screen 
+		$(document).on('click', '.admin-screen-mgmt-delete-item',function() {
+			$(this).parents('.admin-screen-mgmt-spot-list-item').remove();
+			
+		});
+		
+		$(document).on('click', '.admin-user-manage-screen-item',function() {
+			
+		});
+		
 		//get ID when upload button is clicked in upload files page
 		$('.upload_files_section').each(function () {
 			$(this).click(function(){
@@ -198,9 +278,9 @@ if (typeof jQuery !== 'undefined') {
 //				do nothing
 			}
 		});
+		
 
 	});
-
 }
 
 

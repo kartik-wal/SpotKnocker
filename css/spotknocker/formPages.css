@@ -33,10 +33,6 @@ header {
 	display: flex;
 	width: 100%;
 	flex-direction: column;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
 }
 
 .page-section {
@@ -167,7 +163,7 @@ span.form-desc {
 		display: flex;
 		flex-direction: column;
 	}
-	.main-section {
+	.main-section,.subscription-plan-details {
 		-webkit-box-flex: 1;
 		-webkit-flex: 1;
 		-ms-flex: 1;
@@ -175,10 +171,6 @@ span.form-desc {
 	}
 	.subscription-plan-details {
 		padding: 1.25rem 1.875rem;
-		-webkit-box-flex: 1;
-		-webkit-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
 	}
 	.login-button.choose-subscription-plan {
 		border-radius: 0;
