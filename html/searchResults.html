@@ -78,8 +78,21 @@
 				<section class="secondary-header-section">
 
 					<ul class="secondary-header-nav">
-						<li><a href="#"><img alt="Cart" src="../images/headerCart.png"></a></li>
-						<li><a href="#"><img alt="Favorites" src="../images/headerFavorites.png"></a></li>
+						<li><span class="user-cart-img"><img alt="Cart" src="../images/headerCart.png"></span>
+						    <div class="user-cart-wrapper" id ="user_cart">
+								<div class="user-dropdown-arrow"></div>
+									<ul class="user-cart-list">
+										<li><a href="#">My Profile</a></li>
+										<li><a href="myFiles.html">My Files</a></li>
+										<li><a href="#">My Purchases</a></li>
+										<li><a href="#">Link Stripe Account</a></li>
+										<li><a href="#">Go Full Screen</a></li>
+										<li><a href="#">Need Help?</a></li>
+										<li><a href="homePage.html">Logout</a></li>
+									</ul>
+								</div>
+						</li>
+						<li><a href="favouritesPage.html"><img alt="Favorites" src="../images/headerFavorites.png"></a></li>
 						<li><span><span class="hello-user-text">Hello, Matt<span class="user-options-dropdown"></span></span></span>
 						<div class="user-dropdown-wrapper">
 						<div class="user-dropdown-arrow"></div>
@@ -175,7 +188,9 @@
 									</video>
 								</div>
 								
-								<span class="video-info-options"><img alt="Favourite" src=""><img alt="User" src=""> </span>
+								<span class="video-info-options">
+								<img alt="Favourite" src="../images/unfavourite_icon.png" class="search-fav-icon"> <img alt="Favourite" src="../images/favourite_icon.png" class="search-fav-icon toggled-icon">
+								<img alt="User" src="../images/user_icon.png"> </span>
 								<div class="clear-div"></div>
 							</div>
 							
@@ -209,7 +224,9 @@
 									</video>
 								</div>
 								
-								<span class="video-info-options"><img alt="Favourite" src=""><img alt="User" src=""> </span>
+								<span class="video-info-options">
+								<img alt="Favourite" src="../images/unfavourite_icon.png" class="search-fav-icon"> <img alt="Favourite" src="../images/favourite_icon.png" class="search-fav-icon toggled-icon">
+								<img alt="User" src="../images/user_icon.png"> </span>
 								<div class="clear-div"></div>
 							</div>
 							
@@ -243,7 +260,9 @@
 									</video>
 								</div>
 								
-								<span class="video-info-options"><img alt="Favourite" src=""><img alt="User" src=""> </span>
+								<span class="video-info-options">
+								<img alt="Favourite" src="../images/unfavourite_icon.png" class="search-fav-icon"> <img alt="Favourite" src="../images/favourite_icon.png" class="search-fav-icon toggled-icon">
+								<img alt="User" src="../images/user_icon.png"> </span>
 								<div class="clear-div"></div>
 							</div>
 							
@@ -277,7 +296,9 @@
 									</video>
 								</div>
 								
-								<span class="video-info-options"><img alt="Favourite" src=""><img alt="User" src=""> </span>
+								<span class="video-info-options">
+								<img alt="Favourite" src="../images/unfavourite_icon.png" class="search-fav-icon"> <img alt="Favourite" src="../images/favourite_icon.png" class="search-fav-icon toggled-icon">
+								<img alt="User" src="../images/user_icon.png"> </span>
 								<div class="clear-div"></div>
 							</div>
 							
@@ -311,7 +332,9 @@
 									</video>
 								</div>
 								
-								<span class="video-info-options"><img alt="Favourite" src=""><img alt="User" src=""> </span>
+								<span class="video-info-options">
+								<img alt="Favourite" src="../images/unfavourite_icon.png" class="search-fav-icon"> <img alt="Favourite" src="../images/favourite_icon.png" class="search-fav-icon toggled-icon">
+								<img alt="User" src="../images/user_icon.png"> </span>
 								<div class="clear-div"></div>
 							</div>
 							
@@ -345,7 +368,10 @@
 									</video>
 								</div>
 								
-								<span class="video-info-options"><img alt="Favourite" src=""><img alt="User" src=""> </span>
+								<span class="video-info-options">
+								     <img alt="Favourite" src="../images/unfavourite_icon.png" class="search-fav-icon"> 
+								     <img alt="Favourite" src="../images/favourite_icon.png" class="search-fav-icon toggled-icon">
+								     <img alt="User" src="../images/user_icon.png"> </span>
 								<div class="clear-div"></div>
 							</div>
 							
@@ -445,7 +471,7 @@
 		</div>
 	</section>
 	<!-- FORGOT PASSWORD POPUP END -->
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" async src="../js/spotknocker/commonScript.js"></script>
 <script type="text/javascript" async src="../js/spotknocker/pageScript.js"></script>
 

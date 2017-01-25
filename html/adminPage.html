@@ -16,7 +16,7 @@
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"  media="none" onload="if(media!='all')media='all'" />
 </head>
 <body>
-<div class="container">
+<div class="container admin-container">
 	<!-- HEADER -->
 		<header>
 			<div class="header-wrapper logged-in-header">
@@ -32,9 +32,7 @@
                              </div>
 							<!-- HIDDEN NAV FOR DESKTOP -->
 							<ul class="desktop-nav">
-								<li><a href="howItWorks.html">How It Works</a></li>
-								<li><a href="subscriptionPlans.html">Subscriptions</a></li>
-								<li><a href="faq.html">FAQ</a></li>
+								<li><a href="homePage.html">Home</a></li>
 							</ul>
 						</div>
 
@@ -43,7 +41,7 @@
 							<!-- LOGO/MOBILE PAGE HEADING -->
 							<a href="homePage.html"><img alt="Spot Knocker"
 								src="../images/spotknockerLogo.png"></a>
-								<a href="subscriptionPlans.html" class="logo-page-header"><span>Subscription Plans</span></a>
+								<a href="adminPage.html" class="logo-page-header"><span>Admin</span></a>
 						</div>
 
 						<div class="search-bar">
@@ -54,32 +52,9 @@
 					</div>
 				</section>
 
-				<!-- HIDDEN SEARCH BAR -->
-				<section class="search-bar-section" id="search_bar_section">
-					<div class="search-bar-section-wrapper">
-						<div class="search-bar-wrapper search-bar-wrapper-close"
-							id="search_bar_wrapper">
-							<form action="searchResults.html">
-							<img alt="Search Items" id="search_icon"
-								src="../images/searchIcon.png"> <input type="text"
-								id="search_input"
-								placeholder="Search by Screen ID, Business Name, First/Last Name, or City">
-							</form>
-						</div>
-
-						<div class="search-close-wrapper">
-							<img alt="Close Search" class="close-search" id="close_search"
-								src="../images/searchCloseIcon.png" />
-						</div>
-					</div>
-				</section>
-				<!-- HIDDEN SEARCH BAR END -->
-
 				<section class="secondary-header-section">
 
 					<ul class="secondary-header-nav">
-						<li><a href="#"><img alt="Cart" src="../images/headerCart.png"></a></li>
-						<li><a href="#"><img alt="Favorites" src="../images/headerFavorites.png"></a></li>
 						<li><span><span class="hello-user-text">Hello, Matt<span class="user-options-dropdown"></span></span></span>
 						<div class="user-dropdown-wrapper">
 						<div class="user-dropdown-arrow"></div>
@@ -155,7 +130,7 @@
 				            <div class="admin-user-add-wrapper">
 				            <form>
 				                <input type="text" class="admin-search-user" placeholder="Search Users">
-				                <button type="button" class="add-new-user-admin">+ Add New</button>
+				                <span type="button" class="add-new-user-admin signup_section open-popup-link">+ Add New</span>
 				              </form>
 				            </div>
 				            <ul class="admin-user-wrapper">
@@ -327,25 +302,26 @@
 				                <ul class="admin-screen-mgmt-spot-wrapper">
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 1</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span>
+				                       <img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 2</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 3</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 4</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
@@ -367,25 +343,26 @@
 				                <ul class="admin-screen-mgmt-spot-wrapper">
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 1</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span>
+				                       <img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 2</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 3</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 4</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
@@ -407,25 +384,26 @@
 				                <ul class="admin-screen-mgmt-spot-wrapper">
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 1</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span>
+				                       <img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 2</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 3</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 4</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
@@ -447,25 +425,26 @@
 				                <ul class="admin-screen-mgmt-spot-wrapper">
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 1</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span>
+				                       <img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 2</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 3</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 4</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
@@ -487,25 +466,26 @@
 				                <ul class="admin-screen-mgmt-spot-wrapper">
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 1</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span>
+				                       <img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 2</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 3</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
 				                    <li class="admin-screen-mgmt-spot-list-item">
 				                        <span class="admin-screen-mgmt-spot-number">Spot 4</span>
-				                        <span><img alt="Edit Spot" src="../images/logoutActive.png">
+				                        <span><img alt="Edit Spot" src="../images/logoutActive.png" class="edit-spot-document"><input class="admin-screen-mgmt-upload-file" type="file">
 				                            <img alt="Delete Spot" src="../images/deleteIcon.png" class="admin-screen-mgmt-delete-item"> 
 				                         </span>
 				                    </li>
@@ -540,19 +520,125 @@
 				                <img alt="Next Details" src="../images/arrowRightBlue.png" class="admin-manage-user-next"> 
 				                </span>
 				                </li>
+				                <li>
+				                <span class="admin-user-list-item admin-user-manage-screen-item">
+				                <span class="admin-user-detail">
+				                    <img class="admin-user-item-image admin-manage-user-screen-image" alt="Admin Screen Item" src="../images/myProfile.png">
+				                    <span class="admin-screen-mgmt-name-wrapper">
+				                        <span class="admin-screen-mgmt-name admin-manage-user-screen-name">John Dow</span>
+				                        <span class="admin-screen-mgmt-by-name admin-manage-user-email">john.dow@gmail.com</span>
+				                    </span>
+				                </span>
+				                <img alt="Next Details" src="../images/arrowRightBlue.png" class="admin-manage-user-next"> 
+				                </span>
+				                </li>
+				                <li>
+				                <span class="admin-user-list-item admin-user-manage-screen-item">
+				                <span class="admin-user-detail">
+				                    <img class="admin-user-item-image admin-manage-user-screen-image" alt="Admin Screen Item" src="../images/myProfile.png">
+				                    <span class="admin-screen-mgmt-name-wrapper">
+				                        <span class="admin-screen-mgmt-name admin-manage-user-screen-name">John Dow</span>
+				                        <span class="admin-screen-mgmt-by-name admin-manage-user-email">john.dow@gmail.com</span>
+				                    </span>
+				                </span>
+				                <img alt="Next Details" src="../images/arrowRightBlue.png" class="admin-manage-user-next"> 
+				                </span>
+				                </li>
+				                <li>
+				                <span class="admin-user-list-item admin-user-manage-screen-item">
+				                <span class="admin-user-detail">
+				                    <img class="admin-user-item-image admin-manage-user-screen-image" alt="Admin Screen Item" src="../images/myProfile.png">
+				                    <span class="admin-screen-mgmt-name-wrapper">
+				                        <span class="admin-screen-mgmt-name admin-manage-user-screen-name">John Dow</span>
+				                        <span class="admin-screen-mgmt-by-name admin-manage-user-email">john.dow@gmail.com</span>
+				                    </span>
+				                </span>
+				                <img alt="Next Details" src="../images/arrowRightBlue.png" class="admin-manage-user-next"> 
+				                </span>
+				                </li>
+				                <li>
+				                <span class="admin-user-list-item admin-user-manage-screen-item">
+				                <span class="admin-user-detail">
+				                    <img class="admin-user-item-image admin-manage-user-screen-image" alt="Admin Screen Item" src="../images/myProfile.png">
+				                    <span class="admin-screen-mgmt-name-wrapper">
+				                        <span class="admin-screen-mgmt-name admin-manage-user-screen-name">John Dow</span>
+				                        <span class="admin-screen-mgmt-by-name admin-manage-user-email">john.dow@gmail.com</span>
+				                    </span>
+				                </span>
+				                <img alt="Next Details" src="../images/arrowRightBlue.png" class="admin-manage-user-next"> 
+				                </span>
+				                </li>
 				                 
 				            </ul>
 				            </div>
 				            
-				            <div class="admin-user-screen-mgmt-options">
+				            <div class="admin-user-screen-mgmt-options show-manage-user-screen-tab">
 				                <span class="admin-screen-mgmt-name admin-manage-user-screen-name admin-sk-account-header admin-manage-user-tab-header">
-				                    <span><img alt="Go Back" src="../images/arrowRightBlue.png" class="admin-manage-user-go-back-icon">Go Back</span>
+				                    <span class="go-back-to-manage-user-screen"><img alt="Go Back" src="../images/arrowRightBlue.png" class="admin-manage-user-go-back-icon">Go Back</span>
 				                    <ul class="manage-user-screen-tab-link-wrapper">
 				                        <li class="active">Screen Management</li>
 				                        <li>Manage Payment</li>
 				                    </ul>
 				               </span> 
+				               <div class="manage-user-screen-tab-wrapper">
+				                   <div class="manage-user-screen-tab active">
+				                       <ul class="admin-user-wrapper">
+											<li class="admin-user-list-item">
+											    <span class="admin-user-detail">
+												    <span class="admin-screen-mgmt-name admin-manage-user-screen-name">Screen 1</span></span> 
+												    <img alt="Delete User" src="../images/deleteIcon.png" class="admin-user-item-delete admin-manageuser-screen-delete"></li>
+										</ul>
+										<a href="#" class="admin-screen-mgmt-name admin-grant-new-screen">Grant a free new screen</a>
+				                   </div>
+				                   <div class="manage-user-screen-tab">
+				                       <ul class="admin-user-wrapper">
+											<li class="admin-user-list-item admin-manage-payment-list-item">
+											    <span class="admin-user-detail">
+												    <span class="admin-screen-mgmt-name admin-manage-user-screen-name">Give Discount</span></span> 
+												    <img alt="Next Screen" src="../images/arrowRightBlue.png" class="admin-manage-user-next"></li>
+										    <li class="admin-user-list-item admin-manage-payment-list-item">
+											    <a href="#" class="admin-screen-refund-payment"><span class="admin-user-detail">
+												    <span class="admin-screen-mgmt-name admin-manage-user-screen-name">Refund Payment</span></span> 
+												    <img alt="Next Screen" src="../images/arrowRightBlue.png" class="admin-manage-user-next">
+										    </a></li>
+										</ul>
+				                   </div>
+				               </div>
 				            </div>
+				            <div class="admin-user-give-discount-screen show-manage-user-screen-tab">
+				                <span class="admin-screen-mgmt-name admin-manage-user-screen-name admin-sk-account-header admin-manage-user-tab-header">
+				                    <span class="go-back-to-manage-user-screen-tab">
+				                    <img alt="Go Back" src="../images/arrowRightBlue.png" class="admin-manage-screen-tab-go-back-icon">Go Back</span>
+				               </span> 
+				               <form>
+				               <span class="discount-percentage-wrapper">
+				                   <input type="text" placeholder="What % of discount would you like to give?" class="admin-percent-discount-input">
+				                   <span class="choose-discount-month-wrapper">
+				                      <span class="month-discount-text-wrapper">
+				                        <span class="month-discount-text"></span>
+				                        <span class="user-options-dropdown"></span></span>
+				                      <ul class="percent-month-list">
+				                          <li class="active">Choose month</li>
+				                          <li>January</li>
+				                          <li>February</li>
+				                          <li>March</li>
+				                          <li>April</li>
+				                          <li>May</li>
+				                          <li>June</li>
+				                          <li>July</li>
+				                          <li>August</li>
+				                          <li>September</li>
+				                          <li>October</li>
+				                          <li>November</li>
+				                          <li>December</li>
+				                      </ul>
+								</span>
+				               </span>
+				               </form>
+				               <span class="admin-sk-account-modify-wrapper">
+				                      <button type="button" class="admin-give-discount-btn">Give Discount</button>
+				                  </span>
+				             </div>
 				         </div>
 				         <!-- RIGHT COLUMN CONTENT TAB END -->
 				         
@@ -589,10 +675,6 @@
 					<!-- Footer Navigation -->
 					<nav class="footer-navigation-menu">
 						<ul class="footer-navigation-list">
-							<li><a href="howItWorks.html">How It Works</a></li>
-							<li><a href="subscriptionPlans.html">Subscriptions</a></li>
-							<li><a href="faq.html">FAQ</a></li>
-							<li><a href="contactUs.html">Contact Us</a></li>
 							<li><a href="privacyPolicy.html">Privacy Policy</a></li>
 							<li><a href="termsAndConditions.html">T&C</a></li>
 						</ul>
@@ -606,6 +688,24 @@
 		</footer>
 		<!-- FOOTER END -->
 </div>
+<!-- SIGNUP POPUP -->
+	<section id="signup_section" class="popup-overlay">
+		<div class="popup">
+			<img alt="Spot Knocker" src="../images/popupLogo.png" class="popup-logo"> 
+			<form class="login-form">
+			<div class="login-input-block">
+			    <input type="text" class="login-credential" placeholder="Name"> 
+			    <input type="email" class="login-credential" placeholder="Email"> 
+			    <input type="password" class="login-credential" placeholder="Password"> 
+			</div>
+			<div class="login-button-block">
+			    <button type="submit" class="login-button">SIGNUP</button>
+			</div>
+			</form>
+		</div>
+	</section>
+	<!-- SIGNUP POPUP END -->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="../js/spotknocker/commonScript.js"></script>
 <script type="text/javascript" src="../js/spotknocker/pageScript.js"></script>

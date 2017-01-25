@@ -78,8 +78,21 @@
 				<section class="secondary-header-section">
 
 					<ul class="secondary-header-nav">
-						<li><a href="#"><img alt="Cart" src="../images/headerCart.png"></a></li>
-						<li><a href="#"><img alt="Favorites" src="../images/headerFavorites.png"></a></li>
+						<li><span class="user-cart-img"><img alt="Cart" src="../images/headerCart.png"></span>
+						    <div class="user-cart-wrapper" id ="user_cart">
+								<div class="user-dropdown-arrow"></div>
+									<ul class="user-cart-list">
+										<li><a href="#">My Profile</a></li>
+										<li><a href="myFiles.html">My Files</a></li>
+										<li><a href="#">My Purchases</a></li>
+										<li><a href="#">Link Stripe Account</a></li>
+										<li><a href="#">Go Full Screen</a></li>
+										<li><a href="#">Need Help?</a></li>
+										<li><a href="homePage.html">Logout</a></li>
+									</ul>
+								</div>
+						</li>
+						<li><a href="favouritesPage.html"><img alt="Favorites" src="../images/headerFavorites.png"></a></li>
 						<li><span><span class="hello-user-text">Hello, Matt<span class="user-options-dropdown"></span></span></span>
 						<div class="user-dropdown-wrapper">
 						<div class="user-dropdown-arrow"></div>
@@ -155,7 +168,7 @@
 	                                  </ul>
 	                                </div>
 	                           </div>
-	                           <a href="#" class="login-button choose-subscription-plan">Choose Plan</a>
+	                           <span class="login-button choose-subscription-plan choose_subscription_plans_section open-popup-link">Choose Plan</span>
 							</div>
 							
 						<!-- SUBSCRIPTION PLAN BLOCK -->
@@ -172,7 +185,7 @@
 	                                  </ul>
 	                                </div>
 	                           </div>
-	                           <a href="#" class="login-button choose-subscription-plan">Choose Plan</a>
+	                          <span class="login-button choose-subscription-plan choose_subscription_plans_section open-popup-link">Choose Plan</span>
 							</div>
 							
 						<!-- SUBSCRIPTION PLAN BLOCK -->
@@ -192,7 +205,7 @@
 										</ul>
 									</div>
 	                           </div>
-	                           <a href="#" class="login-button choose-subscription-plan">Choose Plan</a>
+	                          <span class="login-button choose-subscription-plan choose_subscription_plans_section open-popup-link">Choose Plan</span>
 							</div>
 
 						</div>
@@ -292,6 +305,25 @@
 		</div>
 	</section>
 	<!-- FORGOT PASSWORD POPUP END -->
+	
+	<!-- CHOOSE SUBSCRIPTION PLAN SCREENS POPUP -->
+	<section id="choose_subscription_plans_section" class="popup-overlay">
+		<div class="popup">
+			<div class="popup-body">
+				<span class="upload-failed-subtext">How many screens would
+					you like to purchase?</span>
+				<form class="login-form submit-form">
+			        <div class="login-input-block">
+			            <input type="tel" class="login-credential" placeholder="Enter # of screens"> 
+			        </div>
+			        <div class="login-button-block">
+			            <button type="submit" class="login-button">SELECT & PROCEED</button>
+			        </div>
+			    </form>
+			</div>
+		</div>
+	</section>
+	<!--  CHOOSE SUBSCRIPTION PLAN SCREENS END -->
 
 <script type="text/javascript" async src="../js/spotknocker/commonScript.js"></script>
 <script type="text/javascript" async src="../js/spotknocker/pageScript.js"></script>

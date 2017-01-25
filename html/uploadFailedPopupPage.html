@@ -8,7 +8,7 @@
 	content="Spot Knocker is a website that is all about getting your videos or pictures seen on the Web globally. Whether it’s business or personal, Spot Knocker will help you gain more exposure, hits or customers. Post your visuals on Spot Knocker and you’ll be featured on the front page!">
 <meta name="keywords"
 	content="Spot Knocker, Feature Videos, Feature Pictures, Feature Visuals, Agency, Global">
-<title>Contact Us</title>
+<title>Upload Failed Popup</title>
 <link rel="stylesheet" href="../css/spotknocker/commonStyle.css"
 	type="text/css"  media="all">
 <link rel="stylesheet" href="../css/spotknocker/formPages.css"
@@ -19,17 +19,19 @@
 <div class="container">
 	<!-- HEADER -->
 		<header>
-			<div class="header-wrapper logged-in-header">
+			<div class="header-wrapper">
 				<section class="primary-header-section">
 					<div class="primary-header-wrapper">
 
 						<div class="menu" id="menu_bar">
+						
 							<!-- MENU ICON -->
 							<div id="menu_bar_icon">
 							<div class="menu-bar-icon"></div>
 							<div class="menu-bar-icon"></div>
 							<div class="menu-bar-icon"></div>
-                             </div>
+                            </div>
+                            
 							<!-- HIDDEN NAV FOR DESKTOP -->
 							<ul class="desktop-nav">
 								<li><a href="howItWorks.html">How It Works</a></li>
@@ -43,10 +45,10 @@
 							<!-- LOGO/MOBILE PAGE HEADING -->
 							<a href="homePage.html"><img alt="Spot Knocker"
 								src="../images/spotknockerLogo.png"></a>
-							<a href="contactUs.html" class="logo-page-header"><span>Contact Us</span></a>
 						</div>
 
 						<div class="search-bar">
+						
 							<!-- SEARCH ICON -->
 							<img alt="Search" id="open_search" src="../images/searchIcon.png">
 							<span>Search for Screens</span>
@@ -64,7 +66,7 @@
 								src="../images/searchIcon.png"> <input type="text"
 								id="search_input"
 								placeholder="Search by Screen ID, Business Name, First/Last Name, or City">
-							</form>
+								</form>
 						</div>
 
 						<div class="search-close-wrapper">
@@ -78,35 +80,8 @@
 				<section class="secondary-header-section">
 
 					<ul class="secondary-header-nav">
-						<li><span class="user-cart-img"><img alt="Cart" src="../images/headerCart.png"></span>
-						    <div class="user-cart-wrapper" id ="user_cart">
-								<div class="user-dropdown-arrow"></div>
-									<ul class="user-cart-list">
-										<li><a href="#">My Profile</a></li>
-										<li><a href="myFiles.html">My Files</a></li>
-										<li><a href="#">My Purchases</a></li>
-										<li><a href="#">Link Stripe Account</a></li>
-										<li><a href="#">Go Full Screen</a></li>
-										<li><a href="#">Need Help?</a></li>
-										<li><a href="homePage.html">Logout</a></li>
-									</ul>
-								</div>
-						</li>
-						<li><a href="favouritesPage.html"><img alt="Favorites" src="../images/headerFavorites.png"></a></li>
-						<li><span><span class="hello-user-text">Hello, Matt<span class="user-options-dropdown"></span></span></span>
-						<div class="user-dropdown-wrapper">
-						<div class="user-dropdown-arrow"></div>
-						<ul class="user-dropdown-list">
-						<li><a href="#">My Profile</a></li>
-						<li><a href="myFiles.html">My Files</a></li>
-						<li><a href="#">My Purchases</a></li>
-						<li><a href="#">Link Stripe Account</a></li>
-						<li><a href="#">Go Full Screen</a></li>
-						<li><a href="#">Need Help?</a></li>
-						<li><a href="homePage.html">Logout</a></li>
-						</ul>
-						</div>
-						</li>
+						<li><span class="login_section open-popup-link">Login</span></li>
+						<li><span class="signup_section open-popup-link">Sign Up</span></li>
 					</ul>
 
 				</section>
@@ -122,22 +97,16 @@
 
 		<!-- MENU ITEMS -->
 		<ul class="top-navigation">
-
-			<li><a href="homePage.html"><img alt="Home" src="../images/home.png">Home</a></li>
-			<li><a href="faq.html" class="active-page"><img alt="FAQ" src="../images/faqActive.png">FAQ</a></li>
-			<li><a href="#"><img alt="Favourites" src="../images/favourites.png">Favourites</a></li>
-			<li><a href="#"><img alt="Past Purchases" src="../images/myDisplays.png">Past Purchases</a></li>
-			<li><a href="myFiles.html"><img alt="My Files" src="../images/myFiles.png">My Files</a></li>
+		<li><a href="howItWorks.html" class="active-page"><img alt="HOW IT WORKS" src="../images/homeActive.png">How It Works</a></li>
 			<li><a href="subscriptionPlans.html"><img alt="Subscriptions" src="../images/subscriptions.png">Subscriptions</a></li>
-			<li><a href="#"><img alt="Link Stripe Account" src="../images/faq.png">Link Stripe Account</a></li>
-			<li><a href="#"><img alt="Need Help?" src="../images/faq.png">Need Help?</a></li>
-			<li><a href="contactUs.html"><img alt="Contact Us" src="../images/contactUs.png">Contact Us</a></li>
+			<li><a href="faq.html"><img alt="FAQ" src="../images/faq.png">FAQ</a></li>
+			<li><a href="contactUs.html"><img alt="Contact US" src="../images/contactUs.png">Contact Us</a></li>
 		</ul>
 
 		<ul class="bottom-navigation">
 
-			<li><a href="#"><img alt="My Profile" src="../images/myProfile.png">My Profile</a></li>
-			<li><a href="homePage.html"><img alt="Logout" src="../images/logout.png">Logout</a></li>
+			<li><span class="login_section open-popup-link"><img alt="Login" src="../images/logout.png">Login</span></li>
+			<li><span class="signup_section open-popup-link"><img alt="Sign Up" src="../images/myProfile.png">Sign Up</span></li>
 		</ul>
 	</nav>
 	<!-- NAVIGATIONAL MENU END -->
@@ -145,26 +114,29 @@
 
 	<!-- PAGE CONTENT -->
 		<section class="main-section" id="main_section">
-		<section class="logged-in-subheader tab-display">
-		<span class="logged-in-page-name">Contact Us</span>
-		<span class="logged-in-page-desc">Feel free to reach out to us incase you have any questions</span>
-		</section>
+		
 			<!-- Page Block -->
 			<section class="page-section">
 				<div class="my-files-container">
-						<div class="my-files-block how-it-works-block contact-us-block">
+						<div class="my-files-block how-it-works-block faq-block">
 							<div class="subscription-plan-item">
-						<span class="know-more-link-wrapper"> 
-							<span class="subscription-plan-header">Got questions? Please feel free to reach out to us anytime</span>
-						</span>
-							<div class="page-section-text">
-								<span class="subscription-plan-brief">
-								<span>Email: <a href="mailto:contact@spotknocker.com" target="_top">contact@spotknocker.com</a></span>
-								</span>
-								<span class="faq-contact-link">Alternatively you can also check out our <a href="faq.html">FAQ page</a> for answers to some common questions you might have.</span>
+						<!-- FAQ BLOCK -->
+							<div class="subscription-plan-details faq-question-block">
+								<span class="know-more-link-wrapper"> 
+								<span class="subscription-plan-header upload_failed_video_duration open-popup-link">Your video duration is longer than the Spot duration. Please reduce the video duration time, and try again.</span></span>
 							</div>
-						</div>
+												<!-- FAQ BLOCK -->
+							<div class="subscription-plan-details faq-question-block">
+								<span class="know-more-link-wrapper">
+								<span class="subscription-plan-header upload_failed_static_image open-popup-link">You can only upload a static image file to a sponsored screen. Please choose a different file. </span></span>
+							</div>
+												<!-- FAQ BLOCK -->
+							<div class="subscription-plan-details faq-question-block">
+								<span class="know-more-link-wrapper"> 
+								<span class="subscription-plan-header upload_failed_video_size open-popup-link">Your video size needs to be less than 10MB. Please reduce the video size, and try again.</span></span>
+							</div>
 
+						</div>
 						</div>
 				</div>
 			</section>
@@ -172,7 +144,7 @@
 		<!-- PAGE CONTENT END -->
 		
       <!-- FOOTER -->
-		<footer class="logged-in-footer">
+		<footer>
 		<section class="copyright-section">
 				<div class="copyright-wrapper">
 					<!-- Footer Navigation -->
@@ -261,6 +233,57 @@
 		</div>
 	</section>
 	<!-- FORGOT PASSWORD POPUP END -->
+	
+		<!-- UPLOAD FAILED VIDEO SIZE POPUP -->
+	<section id="upload_failed_video_size" class="upload-failed-popup popup-overlay">
+		<div class="popup">
+			<span class="upload-failed-icon-wrapper"><img alt="Upload Failed" src="../images/upload_failed_icon.png"> </span>
+			<div class="popup-body">
+			    <div class="login-input-block">
+			            <span class="upload-failed-header">Uh oh!</span> 
+			            <span class="upload-failed-subtext">Your video size needs to be less than 10MB. Please reduce the video size, and try again.</span> 
+			        </div>
+			        <div class="login-button-block">
+			            <button type="submit" class="login-button close-window-button">OKAY</button>
+			        </div>
+			</div>
+		</div>
+	</section>
+	<!--  UPLOAD FAILED VIDEO SIZE ONLY END -->
+	
+	<!-- UPLOAD FAILED STATIC IMAGE ONLY POPUP -->
+	<section id="upload_failed_static_image" class="upload-failed-popup popup-overlay">
+		<div class="popup">
+			<span class="upload-failed-icon-wrapper"><img alt="Upload Failed" src="../images/upload_failed_icon.png"> </span>
+			<div class="popup-body">
+			    <div class="login-input-block">
+			            <span class="upload-failed-header">Uh oh!</span> 
+			            <span class="upload-failed-subtext">You can only upload a static image file to a sponsored screen. Please choose a different file. </span> 
+			        </div>
+			        <div class="login-button-block">
+			            <button type="submit" class="login-button close-window-button">OKAY</button>
+			        </div>
+			</div>
+		</div>
+	</section>
+	<!--  UPLOAD FAILED STATIC IMAGE ONLY END -->
+	
+	<!-- UPLOAD FAILED VIDEO DURATION POPUP -->
+	<section id="upload_failed_video_duration" class="upload-failed-popup popup-overlay">
+		<div class="popup">
+			<span class="upload-failed-icon-wrapper"><img alt="Upload Failed" src="../images/upload_failed_icon.png"> </span>
+			<div class="popup-body">
+			    <div class="login-input-block">
+			            <span class="upload-failed-header">Uh oh!</span> 
+			            <span class="upload-failed-subtext">Your video duration is longer than the Spot duration. Please reduce the video duration time, and try again.</span> 
+			        </div>
+			        <div class="login-button-block">
+			            <button type="submit" class="login-button close-window-button">OKAY</button>
+			        </div>
+			</div>
+		</div>
+	</section>
+	<!--  UPLOAD FAILED VIDEO DURATION END -->
 
 <script type="text/javascript" async src="../js/spotknocker/commonScript.js"></script>
 <script type="text/javascript" async src="../js/spotknocker/pageScript.js"></script>

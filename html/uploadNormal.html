@@ -8,7 +8,7 @@
 	content="Spot Knocker is a website that is all about getting your videos or pictures seen on the Web globally. Whether it’s business or personal, Spot Knocker will help you gain more exposure, hits or customers. Post your visuals on Spot Knocker and you’ll be featured on the front page!">
 <meta name="keywords"
 	content="Spot Knocker, Feature Videos, Feature Pictures, Feature Visuals, Agency, Global">
-<title>Contact Us</title>
+<title>Upload Files</title>
 <link rel="stylesheet" href="../css/spotknocker/commonStyle.css"
 	type="text/css"  media="all">
 <link rel="stylesheet" href="../css/spotknocker/formPages.css"
@@ -41,9 +41,8 @@
 						<div class="logo-page-content">
 
 							<!-- LOGO/MOBILE PAGE HEADING -->
-							<a href="homePage.html"><img alt="Spot Knocker"
-								src="../images/spotknockerLogo.png"></a>
-							<a href="contactUs.html" class="logo-page-header"><span>Contact Us</span></a>
+							<a href="homePage.html"><img alt="Spot Knocker" src="../images/spotknockerLogo.png"></a>
+								<a href="uploadNormal.html" class="logo-page-header"><span>Upload Files</span></a>
 						</div>
 
 						<div class="search-bar">
@@ -57,19 +56,14 @@
 				<!-- HIDDEN SEARCH BAR -->
 				<section class="search-bar-section" id="search_bar_section">
 					<div class="search-bar-section-wrapper">
-						<div class="search-bar-wrapper search-bar-wrapper-close"
-							id="search_bar_wrapper">
+						<div class="search-bar-wrapper search-bar-wrapper-close" id="search_bar_wrapper">
 							<form action="searchResults.html">
-							<img alt="Search Items" id="search_icon"
-								src="../images/searchIcon.png"> <input type="text"
-								id="search_input"
-								placeholder="Search by Screen ID, Business Name, First/Last Name, or City">
+							<img alt="Search Items" id="search_icon" src="../images/searchIcon.png"> <input type="text" id="search_input" placeholder="Search by Screen ID, Business Name, First/Last Name, or City">
 							</form>
 						</div>
 
 						<div class="search-close-wrapper">
-							<img alt="Close Search" class="close-search" id="close_search"
-								src="../images/searchCloseIcon.png" />
+							<img alt="Close Search" class="close-search" id="close_search" src="../images/searchCloseIcon.png">
 						</div>
 					</div>
 				</section>
@@ -117,14 +111,13 @@
 	<!-- NAVIGATIONAL MENU -->
 	<nav class="navigation-menu" id="navigation_menu">
 
-		<img alt="Close Navigation" class="close-nav" id="close_nav"
-			src="../images/navCloseIcon.png" />
+		<img alt="Close Navigation" class="close-nav" id="close_nav" src="../images/navCloseIcon.png">
 
 		<!-- MENU ITEMS -->
 		<ul class="top-navigation">
 
 			<li><a href="homePage.html"><img alt="Home" src="../images/home.png">Home</a></li>
-			<li><a href="faq.html" class="active-page"><img alt="FAQ" src="../images/faqActive.png">FAQ</a></li>
+			<li><a href="faq.html"><img alt="FAQ" src="../images/faq.png">FAQ</a></li>
 			<li><a href="#"><img alt="Favourites" src="../images/favourites.png">Favourites</a></li>
 			<li><a href="#"><img alt="Past Purchases" src="../images/myDisplays.png">Past Purchases</a></li>
 			<li><a href="myFiles.html"><img alt="My Files" src="../images/myFiles.png">My Files</a></li>
@@ -144,27 +137,46 @@
 
 
 	<!-- PAGE CONTENT -->
-		<section class="main-section" id="main_section">
+		<section class="main-section upload-files-main-section" id="main_section">
 		<section class="logged-in-subheader tab-display">
-		<span class="logged-in-page-name">Contact Us</span>
-		<span class="logged-in-page-desc">Feel free to reach out to us incase you have any questions</span>
+		<span class="logged-in-page-name">Upload Files</span>
+		<span class="logged-in-page-desc">Upload your files here. You can either choose from your computer or from My Files or add text.</span>
 		</section>
 			<!-- Page Block -->
 			<section class="page-section">
 				<div class="my-files-container">
-						<div class="my-files-block how-it-works-block contact-us-block">
-							<div class="subscription-plan-item">
-						<span class="know-more-link-wrapper"> 
-							<span class="subscription-plan-header">Got questions? Please feel free to reach out to us anytime</span>
-						</span>
-							<div class="page-section-text">
-								<span class="subscription-plan-brief">
-								<span>Email: <a href="mailto:contact@spotknocker.com" target="_top">contact@spotknocker.com</a></span>
-								</span>
-								<span class="faq-contact-link">Alternatively you can also check out our <a href="faq.html">FAQ page</a> for answers to some common questions you might have.</span>
-							</div>
-						</div>
-
+						<div class="faq-block">
+							<div class="upload-files-user-block">
+							    <span class="admin-user-detail">
+				                    <img class="admin-screen-mgmt-item-image" alt="Admin Screen Item" src="../images/myProfile.png">
+				                    <span class="admin-screen-mgmt-name-wrapper">
+				                        <span class="admin-screen-mgmt-name"><img alt="Favourite" src="../images/favourite_icon.png" class="upload-fav-item-image">Amy’s Ice Cream (SK-678)</span>
+				                        <span class="admin-screen-mgmt-by-name">By John Dow</span>
+				                    </span>
+				                </span>
+				                <img alt="Expand Details" src="../images/arrowRightBlue.png" class="admin-screen-mgmt-expand">
+						     </div>
+						     <div class="upload-files-user-block upload-files-block">
+						         <form action="" enctype="multipart/form-data">
+								<div class="upload-files-box-input">
+								<img alt="Upload File" src="../images/upload_failed_icon.png">
+									<input class="upload-files-box-file" type="file" name="files[]" id="file"
+										data-multiple-caption="{count} files selected" /> <label
+										for="file">Drag and drop files or click here to upload</label>
+									<button class="upload-files-box-button" type="submit">Upload</button>
+								</div>
+							</form>
+							<span class="upload-file-other-option-wrapper">
+							     <span class="upload-file-other-option-text">Or you can also</span>
+							     <span class="upload-file-other-option-text">
+							          <span class="upload-file-other-option-block choose_from_my_files open-popup-link">CHOOSE FROM MY FILES</span>
+							          <span class="upload-file-other-option-block add_text_section open-popup-link">ADD TEXT</span>
+							     </span>
+							     
+							</span>
+						     </div>
+						     <a href="favouritesPage.html#user_cart" class="upload-page-proceed-to-cart">PROCEED & ADD TO CART</a>
+						     
 						</div>
 				</div>
 			</section>
@@ -172,7 +184,7 @@
 		<!-- PAGE CONTENT END -->
 		
       <!-- FOOTER -->
-		<footer class="logged-in-footer">
+		<footer>
 		<section class="copyright-section">
 				<div class="copyright-wrapper">
 					<!-- Footer Navigation -->
@@ -261,9 +273,67 @@
 		</div>
 	</section>
 	<!-- FORGOT PASSWORD POPUP END -->
-
+	
+	<!-- ADD TEXT POPUP -->
+	<section id="add_text_section" class="popup-overlay">
+		<div class="popup">
+			<div class="popup-header">
+			    <span class="popup-heading">Add Text</span>
+				<a class="popup-close" href="#"><img alt="Close" src="../images/navCloseIcon.png"></a>
+			</div>
+			<div class="popup-body">
+			    <form class="login-form submit-form">
+			        <div class="login-input-block">
+			            <div contenteditable="true" placeholder="Enter text here" id="file_add_text_block"></div>
+			        </div>
+			        <div class="login-button-block">
+			            <button type="button" class="login-button" id="add_text_submit">DONE</button>
+			        </div>
+			    </form>
+			</div>
+		</div>
+	</section>
+	<!-- ADD TEXT POPUP END -->
+	
+	<!-- CHOOSE FROM MY FILES POPUP -->
+	<section id="choose_from_my_files" class="popup-overlay">
+		<div class="popup">
+			<div class="popup-header">
+			    <span class="popup-heading choose-from-my-files">Select a file to upload</span>
+			</div>
+			<div class="popup-body">
+			   <div id="gallery">
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>		
+				</div>	
+				<a href="uploadedFile.html" class="upload-page-proceed-to-cart">CONTINUE</a>	
+			</div>
+		</div>
+	</section>
+	<!-- CHOOSE FROM MY FILES END -->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" async src="../js/spotknocker/commonScript.js"></script>
 <script type="text/javascript" async src="../js/spotknocker/pageScript.js"></script>
+<script type="text/javascript" async src="../js/spotknocker/dragdrop.js"></script>
 
 </body>
 </html>

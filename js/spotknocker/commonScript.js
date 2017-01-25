@@ -19,10 +19,15 @@ var html_tag =  document.getElementsByTagName('HTML')[0];
 var container_tag =  document.getElementsByClassName('container')[0];
 const hello_text_container =  document.getElementsByClassName('hello-user-text')[0];
 const user_dropdown_wrapper = document.getElementsByClassName('user-dropdown-wrapper')[0];
-
-//function to open and close search
-open_search.addEventListener('click', openSearch);
-close_search.addEventListener('click', closeSearch);
+var cart_text_container =  document.getElementsByClassName('user-cart-img')[0];
+var user_cart_wrapper = document.getElementsByClassName('user-cart-wrapper')[0];
+if(open_search != null){
+//	function to open and close search
+	open_search.addEventListener('click', openSearch);
+}
+if(close_search != null){
+	close_search.addEventListener('click', closeSearch);
+}
 
 //function to open and close navigation in mobile
 menu_bar_icon.addEventListener('click', openNavigation);
@@ -44,6 +49,10 @@ function openSearch() {
 	search_bar_wrapper.classList.add('search-bar-wrapper-open');
 
 }
+
+if(cart_text_container != null){
+	cart_text_container.addEventListener('click', openCartDropDown);
+	}
 
 //close search
 function closeSearch() {
@@ -81,11 +90,24 @@ function openDropDown(event){
 		e.stopPropagation();
 	});
 }
+
+//open cart list dropdown when logged in
+function openCartDropDown(event){
+	event.stopPropagation();
+	user_cart_wrapper.classList.add('display-cart-dropdown');
+	user_cart_wrapper.addEventListener('click', function(e){
+		e.stopPropagation();
+	});
+}
+
 //close dropdown when clicked outside
 window.addEventListener('click', function(){
 	if(user_dropdown_wrapper != null){
 	user_dropdown_wrapper.classList.remove('display-user-dropdown');
 	}
+	if(user_cart_wrapper != null){
+		user_cart_wrapper.classList.remove('display-cart-dropdown');
+		}
 });
 
 

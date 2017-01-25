@@ -162,6 +162,10 @@ body,.header-wrapper {
 	padding: 0.25rem 0 0.625rem 0;
 }
 
+.admin-container .search-bar {
+	display: none;
+}
+
 .search-bar img {
 	width: 0.875rem;
 }
@@ -255,7 +259,7 @@ body,.header-wrapper {
 	color: #3e3e3e;
 }
 
-.secondary-header-nav>li>a>img {
+.secondary-header-nav>li img {
 	width: 0.9375rem;
 }
 
@@ -275,7 +279,7 @@ body,.header-wrapper {
 	vertical-align: middle;
 }
 
-.user-dropdown-wrapper {
+.user-dropdown-wrapper,.user-cart-wrapper {
 	background-color: #ffffff;
 	box-shadow: 0 0 0.1875rem 0 rgba(0, 0, 0, 0.3);
 	position: absolute;
@@ -286,6 +290,11 @@ body,.header-wrapper {
 	border-radius: 0.3125rem;
 	display: none;
 }
+
+.user-cart-wrapper{
+	min-width: 20rem;
+	right: -0.9375rem;
+} 
 
 .user-dropdown-arrow {
 	width: 0;
@@ -299,7 +308,7 @@ body,.header-wrapper {
 	border-bottom: 0.3125rem solid #fff;
 }
 
-.display-user-dropdown, .secondary-header-nav li>a {
+.display-cart-dropdown,.display-user-dropdown, .secondary-header-nav li>a {
 	display: block;
 }
 
@@ -307,12 +316,12 @@ body,.header-wrapper {
 	overflow: hidden;
 }
 
-ul.user-dropdown-list>li {
+ul.user-dropdown-list>li,ul.user-cart-list>li {
 	padding: 0.625rem 0;
 	border-top: 0.0625rem solid #979797;
 }
 
-ul.user-dropdown-list>li:first-child {
+ul.user-dropdown-list>li:first-child,ul.user-cart-list>li:first-child {
 	border-top: none;
 }
 
@@ -1054,7 +1063,7 @@ div[contenteditable=true]:focus {
 	right: 0;
 }
 
-.logged-in-subheader, .container.formless-page .how-it-works-video-btn {
+.logged-in-subheader, .toggled-icon {
 	display: none;
 }
 
@@ -1079,12 +1088,14 @@ div[contenteditable=true]:focus {
 
 .video-info-options img{
 	margin-right: 0.625rem;
+	width: 0.9375rem;
 }
 
 /* Admin Panel */
 .my-files-container.admin-panel-container,.admin-user-add-wrapper>form, .admin-user-list-item,
 .admin-subscription-plan-price-wrapper,.admin-screen-mgmt-spot-list-item,.admin-sk-user-name-wrapper,
-.admin-screen-mgmt-name.admin-manage-user-tab-header {
+.admin-screen-mgmt-name.admin-manage-user-tab-header,.admin-screen-refund-payment,.discount-percentage-wrapper,
+.month-discount-text-wrapper{
 	margin-top: 3.75rem;
 	display: -webkit-box;
 	display: -moz-box;
@@ -1167,6 +1178,7 @@ a.admin-group-item:nth-last-child(2) {
 	border-top-right-radius: 0.625rem;
 	border: none;
 	padding: 0;
+	line-height: 4;
 }
 
 .admin-user-wrapper {
@@ -1197,7 +1209,8 @@ a.admin-group-item:nth-last-child(2) {
 	margin-right: 2.5rem;
 }
 
-.admin-panel-content .admin-tab-content:not(.active){
+.admin-panel-content .admin-tab-content:not(.active),.manage-user-screen-tab-wrapper .manage-user-screen-tab:not(.active),
+.show-manage-user-screen-tab,.percent-month-list,.admin-screen-mgmt-upload-file{
 	display: none;
 }
 
@@ -1305,7 +1318,8 @@ a.admin-group-item:nth-last-child(2) {
     color: #3E3E3E;
 }
 
-.admin-subscription-price-dropdown-option{
+.admin-subscription-price-dropdown-option,.admin-sk-account-modify-wrapper .admin-manage-user-screen-name,
+.go-back-to-manage-user-screen,.go-back-to-manage-user-screen-tab{
 	cursor: pointer;
 	
 }
@@ -1359,6 +1373,10 @@ a.admin-group-item:nth-last-child(2) {
 	color: #4C4C4C;
 }
 
+.edit-spot-document {
+    padding: 0 0.625rem;
+}
+
 .admin-screen-mgmt-delete-item {
 	margin-left: 1.25rem;
 }
@@ -1407,7 +1425,7 @@ a.admin-group-item:nth-last-child(2) {
 	color: #898989;
 	padding-right: 1.875rem;
 }
-.admin-user-wrapper.admin-sk-account-wrapper {
+.admin-user-wrapper.admin-sk-account-wrapper,.manage-user-screen-tab .admin-user-wrapper {
     padding-bottom: 0;
 	margin-bottom: 30.63rem;
 }
@@ -1426,7 +1444,7 @@ a.admin-group-item:nth-last-child(2) {
 	margin-left: 0.625rem;
 }
 
-.admin-manage-user-go-back-icon {
+.admin-manage-user-go-back-icon,.admin-manage-screen-tab-go-back-icon {
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
@@ -1436,16 +1454,275 @@ a.admin-group-item:nth-last-child(2) {
 	vertical-align: middle;
 }
 
-.admin-screen-mgmt-name.admin-manage-user-tab-header{
+.admin-screen-mgmt-name.admin-manage-user-tab-header {
 	margin-top: 0;
 }
 
 .manage-user-screen-tab-link-wrapper li {
-    display: inline-block;
-    margin-left: 0.625rem;
+	display: inline-block;
+	margin-left: 0.625rem;
+	cursor: pointer;
 }
+
 .manage-user-screen-tab-link-wrapper li:not(.active){
 	color: #AFAFAF;
+}
+
+.admin-screen-mgmt-name.admin-grant-new-screen {
+	padding: 0 0 2.5rem 2.5rem;
+}
+
+.admin-screen-refund-payment{
+	align-items: center;
+    width: 100%;
+	margin: 0;
+}
+
+.discount-percentage-wrapper {
+	padding: 2.5rem 2.5rem 0;
+	margin-bottom: 30.63rem;
+	margin-top: 0;
+}
+
+.admin-percent-discount-input, .month-discount-text-wrapper,
+	.percent-month-list {
+	font-size: 1.125rem;
+	line-height: 1.375rem;
+	color: #3B3B3B;
+	border: 1px solid #DEDEDE;
+	border-radius: 0.625rem;
+}
+
+.admin-percent-discount-input {
+	background-color: #FFFFFF;
+	padding: 1.25rem;
+	width: 65%;
+	margin-right: 1.25rem;
+}
+
+.choose-discount-month-wrapper {
+	width: 35%;
+	position: relative;
+}
+
+.month-discount-text-wrapper {
+	background-color: #FFFFFF;
+	padding: 1.25rem;
+	margin-top: 0;
+	align-items: center;
+	align-items: center;
+}
+
+.percent-month-list {
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding-left: 1.25rem;
+}
+
+.percent-month-list li {
+	padding: 0.3125rem 1.25rem 0.3125rem 0;
+	font-size: 0.875rem;
+	border-top: 0.0625rem solid #979797;
+}
+
+.percent-month-list li:first-child {
+	border-top: 0;
+}
+
+.admin-give-discount-btn{
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.375rem;
+    color: #FFFFFF;
+    background-color: #2296F3;
+    border: 1px solid #DEDEDE;
+    border-radius: 0.625rem;
+    padding: 1.25rem 4.375rem;
+}
+
+/* UPLOAD FAILED POPUPS */
+.upload-failed-icon-wrapper{
+	background-color: #E3EEF8;
+    border-radius: 100%;
+    width: 7.813rem;
+    height: 7.813rem;
+    display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.125rem;
+    margin-bottom: 1.875rem
+}
+
+.upload-failed-popup .popup-body {
+	margin-top: 1.875rem;
+}
+
+.upload-failed-header {
+	font-size: 2.375rem;
+	font-weight: 500;
+	text-align: center;
+	line-height: 2.938rem;
+	color: #54A4EB;
+}
+
+.upload-failed-subtext {
+	font-size: 1rem;
+	text-align: center;
+	line-height: 1.5rem;
+	color: #3B3B3B;
+	margin-top: 0.625rem;
+	margin-bottom: 0.3125rem;
+}
+
+/* UPLOAD NEW FILES */
+#main_section.main-section.upload-files-main-section {
+	display: block;
+}
+
+.upload-fav-item-image {
+	margin-right: 0.625rem;
+}
+
+.upload-files-user-block {
+	background-color: #FFFFFF;
+	box-shadow: 0 0 0.375rem 0 rgba(0,0,0,0.2);
+	border-radius: 0.625rem;
+	padding: 2.5rem 4.375rem;
+	margin-bottom: 1.25rem;
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.upload-files-user-block.upload-files-block {
+	padding-top: 3.125rem;
+	padding-bottom: 4.375rem;
+	display: block;
+	text-align: center;
+}
+
+.upload-files-user-block.upload-files-block form {
+	width: 100%;
+}
+
+.upload-files-box-input {
+	display: flex;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 1.25rem;
+	position: relative;
+}
+
+.upload-files-box-input img {
+	margin-bottom: 1.25rem;
+}
+
+.upload-files-box-file {
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+	    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.upload-files-box-file+label {
+	font-size: 1.125rem;
+	font-weight: 500;
+	text-align: center;
+	line-height: 1.375rem;
+	color: #54A4EB;
+}
+
+.upload-files-box-button {
+	display: none;
+}
+
+.upload-file-other-option-wrapper {
+	display: block;
+	margin-top: 4.375rem;
+	text-align: center;
+}
+
+.upload-file-other-option-text {
+	display: block;
+	font-size: 1.125rem;
+	font-weight: 500;
+	text-align: center;
+	line-height: 1.375rem;
+	color: #A2A2A2;
+}
+
+.upload-file-other-option-block {
+	font-size: 0.75rem;
+	font-weight: bold;
+	line-height: 1.5rem;
+	color: #2296F3;
+	padding: 0.625rem 0;
+	border: 0.1875rem solid #2296F3;
+	border-radius: 6.25rem;
+	display: inline-block;
+	width: 14.19rem;
+	margin: 1.563rem 0.4375rem 0;
+}
+
+.upload-page-proceed-to-cart {
+	font-size: 0.75rem;
+	font-weight: bold;
+	line-height: 1.5rem;
+	color: #FFFFFF;
+	padding: 0.9375rem 5.313rem;
+	background-color: #2296F3;
+	border-radius: 6.25rem;
+	margin-top: 2.5rem;
+	 display: inline-block;
+    float: right;
+}
+
+.uploaded-file-overlay {
+	display: inline-block;
+	margin: 0 auto;
+	box-shadow: 0 0 0.375rem 0 rgba(0,0,0,0.2);
+	border-radius: 0.625rem;
+	position: relative;
+	height: 11.25rem;
+	margin-bottom: 15.63rem;
+}
+
+.uploaded-file-overlay img {
+	height: 100%;
+}
+
+.uploaded-file-overlay .delete-uploaded-file {
+	width: auto;
+	position: absolute;
+	bottom: 0;
+	margin: 0.625rem;
+	background-color: #fff;
+	padding: 0.3125rem;
+	border-radius: 50%;
+	height: auto;
+	right: 0;
+	cursor: pointer;
 }
 
 @media handheld , only screen and (min-width:320px) and (max-width:560px){
@@ -1668,18 +1945,37 @@ a.admin-group-item:nth-last-child(2) {
 	.fb-login-button {
 		margin-bottom: 0.4375rem;
 	}
-	#forgot_password_section .popup-header {
+	#forgot_password_section .popup, #add_text_section .popup,.upload-failed-popup .popup{
+	    width: 35%;
+	    max-width: 21.88rem;
+	}
+	#forgot_password_section .popup-header,#add_text_section .popup-header,
+	#choose_from_my_files .popup-header {
 		box-shadow: none;
 	}
-	#forgot_password_section .popup-heading {
+	#forgot_password_section .popup-heading,#add_text_section .popup-heading {
 		font-size: 1.375rem;
 		color: #54a4eb;
 	}
-	#forgot_password_section .popup-body {
+	#forgot_password_section .popup-body,#add_text_section .popup-body {
 		margin-top: 0;
 	}
-	#forgot_password_section .popup-close {
+	#forgot_password_section .popup-close,,#add_text_section .popup-close {
 		display: none;
+	}
+	#forgot_password_section .login-button, #add_text_section .login-button,.upload-failed-popup .login-button,
+	#choose_subscription_plans_section .login-button
+		 {
+		padding: 1.063rem;
+	}
+	#add_text_section .login-form {
+		margin-top: 0.9375rem;
+	}
+	#add_text_section .login-input-block {
+		border: 1px solid #979797;
+		border-radius: 0.25rem;
+		min-height: 7.5rem;
+		padding: 0.9375rem 1.25rem;
 	}
 	#gallery .thumbnail {
 		width: calc(10% - 0.125rem);
@@ -1846,6 +2142,54 @@ a.admin-group-item:nth-last-child(2) {
 		font-size: 0.9375rem;
 		color: #54A4EB;
 		font-weight: bold;
+	}
+	#choose_from_my_files .popup-body {
+		display: block;
+		margin-top: 5.625rem;
+	}
+	#choose_from_my_files .popup {
+		width: 75%;
+		max-width: none;
+		padding: 0;
+	}
+	#choose_from_my_files .popup-heading {
+		margin-top: 4.375rem;
+		font-size: 1.125rem;
+	}
+	#choose_from_my_files #gallery {
+		display: -webkit-box;
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		box-shadow: 0 0 0.1875rem 0 rgba(0, 0, 0, 0.2);
+	}
+	#choose_from_my_files #gallery .thumbnail {
+		width: calc(10% - 0.1875rem);
+		background-color: #D8D8D8;
+	}
+	#choose_from_my_files #gallery .thumbnail:nth-child(10),
+		#choose_from_my_files  #gallery .thumbnail:not(.add-new-item):last-of-type,
+		#choose_from_my_files #gallery .thumbnail:nth-child(10), #choose_from_my_files #gallery .thumbnail:not(.add-new-item):last-of-type
+		{
+		border-top-right-radius: 0;
+	}
+	#gallery .thumbnail .file-overlay.selected-file-to-upload {
+		background-color: #2296F3;
+		background-image: url(../../images/home.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		display: block;
+	}
+	#choose_from_my_files .upload-page-proceed-to-cart {
+		margin-bottom: 3.125rem;
+		margin-right: 0.625rem;
+	}
+	#choose_from_my_files #gallery .thumbnail:nth-child(11){
+	    margin-top: 0;
 	}
 }
 
@@ -2014,7 +2358,19 @@ figure {
 		padding: 0;
 		margin-right: 0;
 	}
-
+	.admin-container .primary-header-wrapper {
+		justify-content: flex-start;
+	}
+	.admin-container .menu {
+		width: 10%;
+	}
+	.admin-container .logo-page-content {
+		text-align: center;
+		width: 90%;
+	}
+	.admin-container .logo-page-content>a:first-child {
+		display: inline-block;
+	}
 }
 
 @media handheld , only screen and (min-width:1280px) {
