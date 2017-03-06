@@ -1963,6 +1963,10 @@ a.admin-group-item:nth-last-child(2) {
 	width: 62%;
 }
 
+.policy-text b{
+	font-weight: bold;
+}
+
 @media handheld , only screen and (min-width:320px) and (max-width:560px){
 	.page-image-container>img, .banner-poster {
 		width: 100%;
