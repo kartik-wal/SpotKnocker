@@ -168,6 +168,10 @@ if (typeof jQuery !== 'undefined') {
 				$('.percent-month-list').hide();
 
 			}
+			if (!$(event.target).closest('.screen-setting-drop-selected').length && !$(event.target).closest('.screen-settings-dropdown').length) {
+				$('.screen-settings-dropdown').hide();
+
+			}
 		});
 
 		//Function to enable/disable input text when subscription list option is selected 
@@ -358,7 +362,7 @@ if (typeof jQuery !== 'undefined') {
 		if (window.location.hash == "#user_cart") {
 			$(".user-cart-wrapper").addClass('display-cart-dropdown');
 		}
-		
+
 		//delete file from upload screen
 		$(document).on('click', '.delete-uploaded-file',function() {
 			if (confirm("Delete The File?") == true) {
@@ -368,11 +372,32 @@ if (typeof jQuery !== 'undefined') {
 			}
 
 		});
-		
-		
+
+
 		$('#choose_from_my_files').find('.thumbnail').click(function() {
 			$(this).find('.file-overlay').toggleClass('selected-file-to-upload');
 		});
+
+		//clone screen list item when clicking on "Grant New Screen"
+		$(document).on('click', '.admin-grant-new-screen',function() {
+			var clone = $(this).siblings('.admin-user-wrapper').find('.admin-user-list-item:first-child').clone();
+			clone.find('.admin-manage-user-screen-name').text('SK### ');
+			clone.appendTo('#manage_user_screen_list');
+		});
+
+		//toggle screen settings dropdown
+		$(document).on('click', '.screen-setting-drop-selected',function() {
+			if($(this).next('.screen-settings-dropdown').length){
+				$(this).next('.screen-settings-dropdown').toggle();
+				$(document).on('click', '.screen-settings-dropdown li',function() {
+					$(this).parent().find('li').removeClass('active');
+					$(this).addClass('active');
+					$(this).parents('.screen-settings-field').find('.screen-setting-drop-selected-text').text($(this).text());
+					$(this).parent().hide();
+				});
+			}
+		});
+
 	});
 }
 

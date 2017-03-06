@@ -63,7 +63,7 @@
 						</div>
 
 						<div class="search-close-wrapper">
-							<img alt="Close Search" class="close-search" id="close_search" src="../images/searchCloseIcon.png">
+							<img alt="Close Search" class="close-search" id="close_search" src="../images/searchOpenIcon.png">
 						</div>
 					</div>
 				</section>
@@ -148,7 +148,7 @@
 						<div class="faq-block">
 							<div class="upload-files-user-block">
 							    <span class="admin-user-detail">
-				                    <img class="admin-screen-mgmt-item-image" alt="Admin Screen Item" src="../images/myProfile.png">
+				                     <span class="admin-screen-mgmt-item-image"></span>
 				                    <span class="admin-screen-mgmt-name-wrapper">
 				                        <span class="admin-screen-mgmt-name"><img alt="Favourite" src="../images/favourite_icon.png" class="upload-fav-item-image">Amy’s Ice Cream (SK-678)</span>
 				                        <span class="admin-screen-mgmt-by-name">By John Dow</span>
@@ -158,24 +158,24 @@
 						     <div class="upload-files-user-block upload-files-block">
 						         <form action="" enctype="multipart/form-data">
 								<div class="upload-files-box-input">
-								<img alt="Upload File" src="../images/upload_failed_icon.png">
+								<img alt="Upload File" src="../images/uploadFileIcon.png">
 									<input class="upload-files-box-file" type="file" name="files[]" id="file"
 										data-multiple-caption="{count} files selected" /> <label
 										for="file">Drag and drop files or click here to upload</label>
 									<button class="upload-files-box-button" type="submit">Upload</button>
 								</div>
-								<span>Sponsors can upload either 3 static images, or 2 static images and 1 video up to 30 seconds in length </span>
+								<span class="sponsor-upload-subtext">Sponsors can upload either 3 static images, or 2 static images and 1 video up to 30 seconds in length </span>
 							</form>
 							<span class="upload-file-other-option-wrapper">
 							     <span class="upload-file-other-option-text">Or you can also</span>
 							     <span class="upload-file-other-option-text">
-							          <a href="myFiles.html" class="upload-file-other-option-block">CHOOSE FROM MY FILES</a>
+							          <span class="upload-file-other-option-block choose_from_my_files open-popup-link">CHOOSE FROM MY FILES</span>
 							          <span class="upload-file-other-option-block add_text_section open-popup-link">ADD TEXT</span>
 							     </span>
 							     
 							</span>
 						     </div>
-						     <a href="favouritesPage.html#user_cart" class="upload-page-proceed-to-cart">PROCEED & ADD TO CART</a>
+						     <span class="upload-page-proceed-to-cart seller_terms_section open-popup-link">PROCEED & ADD TO CART</span>
 						     
 						</div>
 				</div>
@@ -294,6 +294,72 @@
 		</div>
 	</section>
 	<!-- ADD TEXT POPUP END -->
+	
+	<!-- CHOOSE FROM MY FILES POPUP -->
+	<section id="choose_from_my_files" class="popup-overlay">
+		<div class="popup">
+			<div class="popup-header">
+			    <span class="popup-heading choose-from-my-files">Choose up to 3 files to upload</span>
+			    <span class="choose-from-my-files-subtext">Sponsors can upload either 3 static images, or 2 static images and 1 video up to 30 seconds in length.</span>
+			</div>
+			<div class="popup-body">
+			   <div id="gallery">
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>
+					<figure class="thumbnail"><div class="file-overlay"></div><img class="added-image" src="../images/deskEnvironment.png"></figure>		
+				</div>	
+				<a href="uploadedFile.html" class="upload-page-proceed-to-cart">CONTINUE</a>	
+			</div>
+		</div>
+	</section>
+	<!-- CHOOSE FROM MY FILES END -->
+	
+	<!-- SELLER TERMS POPUP -->
+	<section id="seller_terms_section" class="popup-overlay">
+		<div class="popup">
+			<div class="popup-body">
+			    <div class="seller-term-block">
+			        <span class="seller-term-heading">Seller Terms</span>
+			        <span class="seller-term-content">I understand that
+						this is a private display. I understand that Spot Knocker isn’t
+						responsible for displayed content or for any refunds that may
+						arise from the use of this display. I understand that it’s my
+						responsibility to make sure this display is turned on and my
+						content plays when scheduled. By accepting these Private Display
+						Terms and Conditions, I agree to the above following conditions.
+						<br><br>
+						Our <a class="" href="termsAndConditions.html">Terms & Conditions</a> also apply.</span>
+				</div> 
+				  <div class="seller-term-block">
+			        <span class="seller-term-heading">Notes from Seller</span> 
+			        <span class="seller-term-content">Amy's Ice Cream is
+						a family establishment. We do not condone videos, gifs, or images
+						containing the following: Violence, sexually suggestive material,
+						nudity, or strong language. We reserve the right to remove
+						offending material at cost to the Buyer</span>
+				</div>  
+				<a href="favouritesPage.html#user_cart" class="upload-page-proceed-to-cart">I AGREE</a> 
+			</div>
+		</div>
+	</section>
+	<!--SELLER TERMS POPUP END -->
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" async src="../js/spotknocker/commonScript.js"></script>

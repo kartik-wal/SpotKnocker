@@ -8,7 +8,7 @@
 	content="Spot Knocker is a website that is all about getting your videos or pictures seen on the Web globally. Whether it’s business or personal, Spot Knocker will help you gain more exposure, hits or customers. Post your visuals on Spot Knocker and you’ll be featured on the front page!">
 <meta name="keywords"
 	content="Spot Knocker, Feature Videos, Feature Pictures, Feature Visuals, Agency, Global">
-<title>Upload Files</title>
+<title>Screen Settings</title>
 <link rel="stylesheet" href="../css/spotknocker/commonStyle.css"
 	type="text/css"  media="all">
 <link rel="stylesheet" href="../css/spotknocker/formPages.css"
@@ -41,8 +41,9 @@
 						<div class="logo-page-content">
 
 							<!-- LOGO/MOBILE PAGE HEADING -->
-							<a href="homePage.html"><img alt="Spot Knocker" src="../images/spotknockerLogo.png"></a>
-								<a href="uploadNormal.html" class="logo-page-header"><span>Upload Files</span></a>
+							<a href="homePage.html"><img alt="Spot Knocker"
+								src="../images/spotknockerLogo.png"></a>
+							<a href="screenSettings.html" class="logo-page-header"><span>Screen Settings</span></a>
 						</div>
 
 						<div class="search-bar">
@@ -56,14 +57,19 @@
 				<!-- HIDDEN SEARCH BAR -->
 				<section class="search-bar-section" id="search_bar_section">
 					<div class="search-bar-section-wrapper">
-						<div class="search-bar-wrapper search-bar-wrapper-close" id="search_bar_wrapper">
+						<div class="search-bar-wrapper search-bar-wrapper-close"
+							id="search_bar_wrapper">
 							<form action="searchResults.html">
-							<img alt="Search Items" id="search_icon" src="../images/searchIcon.png"> <input type="text" id="search_input" placeholder="Search by Screen ID, Business Name, First/Last Name, or City">
+							<img alt="Search Items" id="search_icon"
+								src="../images/searchIcon.png"> <input type="text"
+								id="search_input"
+								placeholder="Search by Screen ID, Business Name, First/Last Name, or City">
 							</form>
 						</div>
 
 						<div class="search-close-wrapper">
-							<img alt="Close Search" class="close-search" id="close_search" src="../images/searchOpenIcon.png">
+							<img alt="Close Search" class="close-search" id="close_search"
+								src="../images/searchOpenIcon.png" />
 						</div>
 					</div>
 				</section>
@@ -111,13 +117,14 @@
 	<!-- NAVIGATIONAL MENU -->
 	<nav class="navigation-menu" id="navigation_menu">
 
-		<img alt="Close Navigation" class="close-nav" id="close_nav" src="../images/navCloseIcon.png">
+		<img alt="Close Navigation" class="close-nav" id="close_nav"
+			src="../images/navCloseIcon.png" />
 
 		<!-- MENU ITEMS -->
 		<ul class="top-navigation">
 
 			<li><a href="homePage.html"><img alt="Home" src="../images/home.png">Home</a></li>
-			<li><a href="faq.html"><img alt="FAQ" src="../images/faq.png">FAQ</a></li>
+			<li><a href="faq.html" class="active-page"><img alt="FAQ" src="../images/faqActive.png">FAQ</a></li>
 			<li><a href="#"><img alt="Favourites" src="../images/favourites.png">Favourites</a></li>
 			<li><a href="#"><img alt="Past Purchases" src="../images/myDisplays.png">Past Purchases</a></li>
 			<li><a href="myFiles.html"><img alt="My Files" src="../images/myFiles.png">My Files</a></li>
@@ -137,42 +144,104 @@
 
 
 	<!-- PAGE CONTENT -->
-		<section class="main-section upload-files-main-section" id="main_section">
+		<section class="main-section" id="main_section">
 		<section class="logged-in-subheader tab-display">
-		<span class="logged-in-page-name">Upload Files</span>
-		<span class="logged-in-page-desc">Upload your files here. You can either choose from your computer or from My Files or add text.</span>
+		<span class="logged-in-page-name">Screen Settings</span>
+		<span class="logged-in-page-desc">Manage your screen preferences here</span>
 		</section>
 			<!-- Page Block -->
 			<section class="page-section">
 				<div class="my-files-container">
-						<div class="faq-block">
-							<div class="upload-files-user-block">
-							    <span class="admin-user-detail">
-				                    <span class="admin-screen-mgmt-item-image"></span>
-				                    <span class="admin-screen-mgmt-name-wrapper">
-				                        <span class="admin-screen-mgmt-name"><img alt="Favourite" src="../images/favourite_icon.png" class="upload-fav-item-image">Amy’s Ice Cream (SK-678)</span>
-				                        <span class="admin-screen-mgmt-by-name">By John Dow</span>
-				                    </span>
-				                </span>
-						     </div>
-						     <div class="upload-files-user-block upload-files-block">
-						         <span class="uploaded-file-overlay">
-						             <span class="uploaded-file-image-container">
-						             <img alt="Uploaded File" src="../images/deskEnvironment.png">
-						             <img class="delete-uploaded-file" src="../images/deleteIcon.png" alt="Delete File">
-						             </span>
-						         </span>
-						     </div>
-						      <span class="upload-page-proceed-to-cart seller_terms_section open-popup-link">PROCEED & ADD TO CART</span>
-						     
-						</div>
+   				    <div class="screen-settings-wrapper">
+   				         <span class="screen-settings-field">
+   				             <input type="text" placeholder="Business Name">
+   				         </span>
+   				         <span class="screen-settings-field">
+   				             <input type="text" placeholder="Screen Name">
+   				         </span>
+   				         <span class="screen-settings-field">
+   				            <span>Screen #</span><span class="screen-number-value">SK-000</span>
+   				         </span>
+   				         <span class="screen-settings-field">
+   				             <input type="text" placeholder="Display Resolution">
+   				         </span>
+   				         <span class="screen-settings-field">
+   				             <span class="screen-setting-drop-selected">
+   				                 <span class="screen-setting-drop-selected-text">Screen Orientation</span>
+   				                 <span class="user-options-dropdown"></span>
+   				             </span>
+   				             <ul class="screen-settings-dropdown">
+   				                 <li class="active">Portrait</li>
+   				                 <li>Landscape</li>
+   				             </ul>
+   				         </span>
+   				         <span class="screen-settings-field">
+   				             <span class="screen-setting-drop-selected">
+   				                 <span class="screen-setting-drop-selected-text">Display Type</span>
+   				                 <span class="user-options-dropdown"></span>
+   				             </span>
+   				             <ul class="screen-settings-dropdown">
+   				                 <li class="active">Indoors</li>
+   				                 <li>Outdoors</li>
+   				             </ul>
+   				         </span>
+   				         <span class="screen-settings-field">
+   				             <label><span>Make Screen Private</span><input type="checkbox"></label>
+   				         </span>
+   				         <span class="screen-settings-field">
+   				             <input type="text" placeholder="Screen hrs of operation">
+   				         </span>
+   				         <div class="settings-disclaimer-block">
+							<p>Disclaimer:</p>
+							<p>I understand that this is a private display. I
+							understand that Spot Knocker isn’t responsible for displayed
+							content or for any refunds that may arise from the use of this
+							display. I understand that it’s my responsibility to make sure
+							this display is turned on and my content plays when scheduled. By
+							accepting these Private Display Terms and Conditions, I agree to
+							the above following conditions.</p><br>
+							<p>Our Terms & Conditions also apply.</p>
+   				         </div>
+   				         <span class="screen-settings-field disclaimer-text">
+   				             <input type="text" placeholder="You can add text to your disclaimer here">
+   				         </span>
+   				         <span class="screen-settings-field">
+   				             <span class="settings-admin-email">Admin Email: </span><input type="text" value="John.dow@gmail.com">
+   				         </span>
+   				         <span class="screen-settings-field">
+   				             <span>Approver Emails: </span><span class="setting-approver-email">4 Emails</span>
+   				         </span>
+   				         <span class="screen-settings-field">
+   				             <span class="screen-setting-drop-selected">
+   				                 <span class="screen-setting-drop-selected-text">Screen Settings and Pricing</span>
+   				                 <span class="user-options-dropdown non-dropdown-icon"></span>
+   				             </span>
+   				         </span>
+   				         <span class="screen-settings-field">
+   				             <span class="screen-setting-drop-selected">
+   				                 <span class="screen-setting-drop-selected-text">Sponsorship Pricing</span>
+   				                 <span class="user-options-dropdown non-dropdown-icon"></span>
+   				             </span>
+   				         </span>
+   				          <span class="screen-settings-field full-screen-field">
+   				             <label><span class="tooltip-container">Full Screen?
+   				             <img alt="What is this" src="../images/fullScreenIcon.png">
+   				             <span class="tooltiptext">You must be a
+										subscribed user to make your display full screen</span>
+							</span>
+   				             <input type="checkbox">
+   				              </label>
+   				            
+   				         </span>
+   				    </div>
+   				    <button class="upload-page-proceed-to-cart" type="button">SAVE</button>
 				</div>
 			</section>
 		</section>
 		<!-- PAGE CONTENT END -->
 		
       <!-- FOOTER -->
-		<footer>
+		<footer class="logged-in-footer">
 		<section class="copyright-section">
 				<div class="copyright-wrapper">
 					<!-- Footer Navigation -->
@@ -261,58 +330,6 @@
 		</div>
 	</section>
 	<!-- FORGOT PASSWORD POPUP END -->
-	
-	<!-- ADD TEXT POPUP -->
-	<section id="add_text_section" class="popup-overlay">
-		<div class="popup">
-			<div class="popup-header">
-			    <span class="popup-heading">Add Text</span>
-				<a class="popup-close" href="#"><img alt="Close" src="../images/navCloseIcon.png"></a>
-			</div>
-			<div class="popup-body">
-			    <form class="login-form submit-form">
-			        <div class="login-input-block">
-			            <div contenteditable="true" placeholder="Enter text here" id="file_add_text_block"></div>
-			        </div>
-			        <div class="login-button-block">
-			            <button type="button" class="login-button" id="add_text_submit">DONE</button>
-			        </div>
-			    </form>
-			</div>
-		</div>
-	</section>
-	<!-- ADD TEXT POPUP END -->
-	
-	
-	<!-- SELLER TERMS POPUP -->
-	<section id="seller_terms_section" class="popup-overlay">
-		<div class="popup">
-			<div class="popup-body">
-			    <div class="seller-term-block">
-			        <span class="seller-term-heading">Seller Terms</span>
-			        <span class="seller-term-content">I understand that
-						this is a private display. I understand that Spot Knocker isn’t
-						responsible for displayed content or for any refunds that may
-						arise from the use of this display. I understand that it’s my
-						responsibility to make sure this display is turned on and my
-						content plays when scheduled. By accepting these Private Display
-						Terms and Conditions, I agree to the above following conditions.
-						<br><br>
-						Our <a class="" href="termsAndConditions.html">Terms & Conditions</a> also apply.</span>
-				</div> 
-				  <div class="seller-term-block">
-			        <span class="seller-term-heading">Notes from Seller</span> 
-			        <span class="seller-term-content">Amy's Ice Cream is
-						a family establishment. We do not condone videos, gifs, or images
-						containing the following: Violence, sexually suggestive material,
-						nudity, or strong language. We reserve the right to remove
-						offending material at cost to the Buyer</span>
-				</div>  
-				<a href="favouritesPage.html#user_cart" class="upload-page-proceed-to-cart">I AGREE</a> 
-			</div>
-		</div>
-	</section>
-	<!--SELLER TERMS POPUP END -->
 	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" async src="../js/spotknocker/commonScript.js"></script>

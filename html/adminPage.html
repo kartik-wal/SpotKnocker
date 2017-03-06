@@ -130,7 +130,7 @@
 				            <div class="admin-user-add-wrapper">
 				            <form>
 				                <input type="text" class="admin-search-user" placeholder="Search Users">
-				                <span type="button" class="add-new-user-admin signup_section open-popup-link">+ Add New</span>
+				                <span class="add-new-user-admin signup_section open-popup-link">+ Add New</span>
 				              </form>
 				            </div>
 				            <ul class="admin-user-wrapper">
@@ -291,7 +291,7 @@
 				                <li>
 				                <span class="admin-user-list-item">
 				                <span class="admin-user-detail">
-				                    <img class="admin-screen-mgmt-item-image" alt="Admin Screen Item" src="../images/myProfile.png">
+				                    <span class="admin-screen-mgmt-item-image"></span>
 				                    <span class="admin-screen-mgmt-name-wrapper">
 				                        <span class="admin-screen-mgmt-name">Home Page (SK-678)</span>
 				                        <span class="admin-screen-mgmt-by-name">By Spot Knocker</span>
@@ -332,7 +332,7 @@
 				                 <li>
 				                <span class="admin-user-list-item">
 				                <span class="admin-user-detail">
-				                    <img class="admin-screen-mgmt-item-image" alt="Admin Screen Item" src="../images/myProfile.png">
+				                    <span class="admin-screen-mgmt-item-image"></span>
 				                    <span class="admin-screen-mgmt-name-wrapper">
 				                        <span class="admin-screen-mgmt-name">Home Page (SK-678)</span>
 				                        <span class="admin-screen-mgmt-by-name">By Spot Knocker</span>
@@ -373,7 +373,7 @@
 				                 <li>
 				                <span class="admin-user-list-item">
 				                <span class="admin-user-detail">
-				                    <img class="admin-screen-mgmt-item-image" alt="Admin Screen Item" src="../images/myProfile.png">
+				                    <span class="admin-screen-mgmt-item-image"></span>
 				                    <span class="admin-screen-mgmt-name-wrapper">
 				                        <span class="admin-screen-mgmt-name">Home Page (SK-678)</span>
 				                        <span class="admin-screen-mgmt-by-name">By Spot Knocker</span>
@@ -414,7 +414,7 @@
 				                 <li>
 				                <span class="admin-user-list-item">
 				                <span class="admin-user-detail">
-				                    <img class="admin-screen-mgmt-item-image" alt="Admin Screen Item" src="../images/myProfile.png">
+				                    <span class="admin-screen-mgmt-item-image"></span>
 				                    <span class="admin-screen-mgmt-name-wrapper">
 				                        <span class="admin-screen-mgmt-name">Home Page (SK-678)</span>
 				                        <span class="admin-screen-mgmt-by-name">By Spot Knocker</span>
@@ -455,7 +455,7 @@
 				                 <li>
 				                <span class="admin-user-list-item">
 				                <span class="admin-user-detail">
-				                    <img class="admin-screen-mgmt-item-image" alt="Admin Screen Item" src="../images/myProfile.png">
+				                    <span class="admin-screen-mgmt-item-image"></span>
 				                    <span class="admin-screen-mgmt-name-wrapper">
 				                        <span class="admin-screen-mgmt-name">Home Page (SK-678)</span>
 				                        <span class="admin-screen-mgmt-by-name">By Spot Knocker</span>
@@ -582,13 +582,13 @@
 				               </span> 
 				               <div class="manage-user-screen-tab-wrapper">
 				                   <div class="manage-user-screen-tab active">
-				                       <ul class="admin-user-wrapper">
+				                       <ul class="admin-user-wrapper" id="manage_user_screen_list">
 											<li class="admin-user-list-item">
 											    <span class="admin-user-detail">
 												    <span class="admin-screen-mgmt-name admin-manage-user-screen-name">Screen 1</span></span> 
 												    <img alt="Delete User" src="../images/deleteIcon.png" class="admin-user-item-delete admin-manageuser-screen-delete"></li>
 										</ul>
-										<a href="#" class="admin-screen-mgmt-name admin-grant-new-screen">Grant a free new screen</a>
+										<span class="admin-screen-mgmt-name admin-grant-new-screen">Grant a free new screen</span>
 				                   </div>
 				                   <div class="manage-user-screen-tab">
 				                       <ul class="admin-user-wrapper">
@@ -656,8 +656,8 @@
 				                  </span>
 				             </div>
 				              <span class="admin-sk-account-modify-wrapper">
-				                      <span class="admin-screen-mgmt-name admin-manage-user-screen-name">Change Password</span>
-				                      <span class="admin-screen-mgmt-name admin-manage-user-screen-name">Edit Details</span>
+				                      <span class="admin-screen-mgmt-name admin-manage-user-screen-name change_account_password open-popup-link">Change Password</span>
+				                      <span class="admin-screen-mgmt-name admin-manage-user-screen-name edit_account_details open-popup-link">Edit Details</span>
 				                  </span>
 				          </div>
 				          <!-- RIGHT COLUMN CONTENT TAB END -->
@@ -705,6 +705,40 @@
 		</div>
 	</section>
 	<!-- SIGNUP POPUP END -->
+	<!-- EDIT DETAILS POPUP -->
+	<section id="edit_account_details" class="popup-overlay">
+		<div class="popup">
+			<img alt="Spot Knocker" src="../images/popupLogo.png" class="popup-logo"> 
+			<form class="login-form">
+			<div class="login-input-block">
+			    <input type="text" class="login-credential" placeholder="Name" value="John Dow"> 
+			    <input type="email" class="login-credential" placeholder="Email" value="John.dow@gmail.com"> 
+			</div>
+			<div class="login-button-block">
+			    <button type="submit" class="login-button">SAVE</button>
+			    <button type="submit" class="login-button">CANCEL</button>
+			</div>
+			</form>
+		</div>
+	</section>
+	<!-- EDIT DETAILS POPUP END -->
+    <!-- CHANGE PASSWORD POPUP -->
+	<section id="change_account_password" class="popup-overlay">
+		<div class="popup">
+			<img alt="Spot Knocker" src="../images/popupLogo.png" class="popup-logo"> 
+			<form class="login-form">
+			<div class="login-input-block">
+			    <input type="password" class="login-credential" placeholder="Current Password"> 
+			    <input type="password" class="login-credential" placeholder="New Password"> 
+			    <input type="password" class="login-credential" placeholder="Confirm New Password"> 
+			</div>
+			<div class="login-button-block">
+			    <button type="submit" class="login-button">SAVE</button>
+			</div>
+			</form>
+		</div>
+	</section>
+	<!-- CHANGE PASSWORD POPUP END -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="../js/spotknocker/commonScript.js"></script>

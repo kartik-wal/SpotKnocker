@@ -3,7 +3,12 @@ $(document).ready(function()
 
 
 	$('.upload-files-box-file').change(function(e) { 
-		window.location = "uploadedFile.html";
+		if($('.sponsor-upload-subtext').length){
+			window.location = "sponsorUploadedFile.html";
+		}
+		else{
+			window.location = "uploadedFile.html";
+		}
 	});
 
 
@@ -27,7 +32,12 @@ $(document).ready(function()
 		e.stopPropagation();
 		e.preventDefault();
 		$(this).css('border', 'none')
-		window.location = "uploadedFile.html";
+		if($('.sponsor-upload-subtext').length){
+			window.location = "sponsorUploadedFile.html";
+		}
+		else{
+			window.location = "uploadedFile.html";
+		}
 
 	});
 		});
